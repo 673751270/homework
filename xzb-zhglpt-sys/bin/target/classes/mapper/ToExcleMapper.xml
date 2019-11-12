@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nfdw.mapper.ToExcleMapper">
+    <cache />
+    <select id="selectListByPage" resultType="com.nfdw.entity.ExcleInfo">
+        select  @rownum := @rownum +1 AS rownum,
+        t2.org_name, t2.principal ,t2.register_num,
+        t2.address_area,
+        t2.oph,
+        t2.fax,
+        t2.zip,
+        t2.depart_type,
+        t3.annals,
+        t3.club_year,
+        (case t2.ismember when '1' then '是' when '0' then '否' end) ismember ,
+        (case t2.state when '1' then '正常' when '0' then '撤销' end) state
+        from
+        (SELECT  @rownum := 0) r,
+        TB_XZB_gov_OFFICE_INFO t2 ,
+        tb_xzb_gov_office_other t3
+        <where>
+
+            <if test="departType !=null and departType !=''">
+                and depart_type =${departType}
+            </if>
+            <if test="ismember !=null and ismember !=''">
+                and ismember =${ismember}
+            </if>
+            <if test="state != null and state !=''">
+                and state = ${state}
+
+            </if>
+            <if test="annals != null and annals !=''">
+                and annals = ${annals}
+
+            </if>
+            <if test="clubYear != null and clubYear != ''">
+                and clubYear = ${clubYear}
+            </if>
+
+
+        </where>
+
+    </select>
+
+    <select id="getExcelList" resultType="com.nfdw.entity.ExcleInfo">
+        select  @rownum := @rownum +1 AS rownum,
+        t2.org_name, t2.principal ,t2.register_num,
+        t2.address_area,
+        t2.oph,
+        t2.fax,
+        t2.zip,
+        t2.depart_type,
+        t3.annals,
+        t3.club_year,
+        (case t2.ismember when '1' then '是' when '0' then '否' end) ismember ,
+        (case t2.state when '1' then '正常' when '0' then '撤销' end) state
+        from
+        (SELECT  @rownum := 0) r,
+        TB_XZB_gov_OFFICE_INFO t2 ,
+        tb_xzb_gov_office_other t3
+        <where>
+
+            <if test="excleInfo.departType !=null and excleInfo.departType !=''">
+                and depart_type =${departType}
+            </if>
+            <if test="excleInfo.ismember !=null and excleInfo.ismember !=''">
+                and ismember =${ismember}
+            </if>
+            <if test="excleInfo.state != null and state !=''">
+                and state = ${state}
+
+            </if>
+            <if test="excleInfo.annals != null and excleInfo.annals !=''">
+                and annals = ${annals}
+
+            </if>
+            <if test="excleInfo.clubYear != null and excleInfo.clubYear != ''">
+                and clubYear = ${clubYear}
+            </if>
+
+
+        </where>
+
+
+    </select>
+
+
+</mapper>

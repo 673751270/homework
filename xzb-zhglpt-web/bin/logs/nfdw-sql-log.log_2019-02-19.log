@@ -1,0 +1,516 @@
+2019-02-19 16:29:04,683 DEBUG [main] [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-02-19 16:29:05,245 DEBUG [main] [org.apache.ibatis.io.VFS] - Using VFS adapter tk.mybatis.mapper.autoconfigure.SpringBootVFS
+2019-02-19 16:29:05,261 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.CurrentMenu matches criteria [is assignable to Object]
+2019-02-19 16:29:05,261 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.CurrentRole matches criteria [is assignable to Object]
+2019-02-19 16:29:05,261 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.CurrentUser matches criteria [is assignable to Object]
+2019-02-19 16:29:05,261 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.Dictionary matches criteria [is assignable to Object]
+2019-02-19 16:29:05,261 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.PageData matches criteria [is assignable to Object]
+2019-02-19 16:29:05,261 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.Permission matches criteria [is assignable to Object]
+2019-02-19 16:29:05,261 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.SysDepartment matches criteria [is assignable to Object]
+2019-02-19 16:29:05,261 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.SysJob matches criteria [is assignable to Object]
+2019-02-19 16:29:05,261 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.SysLog matches criteria [is assignable to Object]
+2019-02-19 16:29:05,261 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.SysMenu matches criteria [is assignable to Object]
+2019-02-19 16:29:05,261 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.SysRole matches criteria [is assignable to Object]
+2019-02-19 16:29:05,261 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.SysRoleMenu matches criteria [is assignable to Object]
+2019-02-19 16:29:05,277 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.SysRoleUser matches criteria [is assignable to Object]
+2019-02-19 16:29:05,277 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.SysUser matches criteria [is assignable to Object]
+2019-02-19 16:29:05,277 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.User matches criteria [is assignable to Object]
+2019-02-19 16:29:05,277 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.ActAssignee matches criteria [is assignable to Object]
+2019-02-19 16:29:05,277 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.ActDeployment matches criteria [is assignable to Object]
+2019-02-19 16:29:05,277 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.ActModel matches criteria [is assignable to Object]
+2019-02-19 16:29:05,277 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.BaseTask matches criteria [is assignable to Object]
+2019-02-19 16:29:05,277 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.LeaveOpinion matches criteria [is assignable to Object]
+2019-02-19 16:29:05,277 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.ProcessDefinition matches criteria [is assignable to Object]
+2019-02-19 16:29:05,277 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.ProcessInstanceInfo matches criteria [is assignable to Object]
+2019-02-19 16:29:05,277 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.Task matches criteria [is assignable to Object]
+2019-02-19 16:29:05,277 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.UserLeave matches criteria [is assignable to Object]
+2019-02-19 16:29:05,277 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.CurrentMenu matches criteria [is assignable to Object]
+2019-02-19 16:29:05,277 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.CurrentRole matches criteria [is assignable to Object]
+2019-02-19 16:29:05,277 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.CurrentUser matches criteria [is assignable to Object]
+2019-02-19 16:29:05,277 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.Dictionary matches criteria [is assignable to Object]
+2019-02-19 16:29:05,277 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.PageData matches criteria [is assignable to Object]
+2019-02-19 16:29:05,277 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.Permission matches criteria [is assignable to Object]
+2019-02-19 16:29:05,277 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.SysDepartment matches criteria [is assignable to Object]
+2019-02-19 16:29:05,277 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.SysJob matches criteria [is assignable to Object]
+2019-02-19 16:29:05,277 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.SysLog matches criteria [is assignable to Object]
+2019-02-19 16:29:05,277 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.SysMenu matches criteria [is assignable to Object]
+2019-02-19 16:29:05,277 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.SysRole matches criteria [is assignable to Object]
+2019-02-19 16:29:05,277 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.SysRoleMenu matches criteria [is assignable to Object]
+2019-02-19 16:29:05,277 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.SysRoleUser matches criteria [is assignable to Object]
+2019-02-19 16:29:05,277 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.SysUser matches criteria [is assignable to Object]
+2019-02-19 16:29:05,277 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.User matches criteria [is assignable to Object]
+2019-02-19 16:29:05,277 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.ActAssignee matches criteria [is assignable to Object]
+2019-02-19 16:29:05,277 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.ActDeployment matches criteria [is assignable to Object]
+2019-02-19 16:29:05,277 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.ActModel matches criteria [is assignable to Object]
+2019-02-19 16:29:05,277 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.BaseTask matches criteria [is assignable to Object]
+2019-02-19 16:29:05,292 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.LeaveOpinion matches criteria [is assignable to Object]
+2019-02-19 16:29:05,292 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.ProcessDefinition matches criteria [is assignable to Object]
+2019-02-19 16:29:05,292 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.ProcessInstanceInfo matches criteria [is assignable to Object]
+2019-02-19 16:29:05,292 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.Task matches criteria [is assignable to Object]
+2019-02-19 16:29:05,292 DEBUG [main] [org.apache.ibatis.io.ResolverUtil] - Checking to see if class com.nfdw.entity.UserLeave matches criteria [is assignable to Object]
+2019-02-19 16:29:05,308 DEBUG [main] [org.mybatis.spring.SqlSessionFactoryBean] - Scanned package: 'com.nfdw.entity' for aliases
+2019-02-19 16:29:05,947 DEBUG [main] [org.mybatis.spring.SqlSessionFactoryBean] - Parsed mapper file: 'file [D:\Workspaces\MyEclipse 10\nfdw-basic\nfdw-core\target\classes\mapper\DictionaryMapper.xml]'
+2019-02-19 16:29:06,089 DEBUG [main] [org.mybatis.spring.SqlSessionFactoryBean] - Parsed mapper file: 'file [D:\Workspaces\MyEclipse 10\nfdw-basic\nfdw-sys\target\classes\mapper\SysDepartmentMapper.xml]'
+2019-02-19 16:29:06,104 DEBUG [main] [org.mybatis.spring.SqlSessionFactoryBean] - Parsed mapper file: 'file [D:\Workspaces\MyEclipse 10\nfdw-basic\nfdw-sys\target\classes\mapper\SysJobMapper.xml]'
+2019-02-19 16:29:06,120 DEBUG [main] [org.mybatis.spring.SqlSessionFactoryBean] - Parsed mapper file: 'file [D:\Workspaces\MyEclipse 10\nfdw-basic\nfdw-sys\target\classes\mapper\SysLogMapper.xml]'
+2019-02-19 16:29:06,245 DEBUG [main] [org.mybatis.spring.SqlSessionFactoryBean] - Parsed mapper file: 'file [D:\Workspaces\MyEclipse 10\nfdw-basic\nfdw-sys\target\classes\mapper\SysMenuMapper.xml]'
+2019-02-19 16:29:06,260 DEBUG [main] [org.mybatis.spring.SqlSessionFactoryBean] - Parsed mapper file: 'file [D:\Workspaces\MyEclipse 10\nfdw-basic\nfdw-sys\target\classes\mapper\SysRoleMapper.xml]'
+2019-02-19 16:29:06,276 DEBUG [main] [org.mybatis.spring.SqlSessionFactoryBean] - Parsed mapper file: 'file [D:\Workspaces\MyEclipse 10\nfdw-basic\nfdw-sys\target\classes\mapper\SysRoleMenuMapper.xml]'
+2019-02-19 16:29:06,323 DEBUG [main] [org.mybatis.spring.SqlSessionFactoryBean] - Parsed mapper file: 'file [D:\Workspaces\MyEclipse 10\nfdw-basic\nfdw-sys\target\classes\mapper\SysRoleUserMapper.xml]'
+2019-02-19 16:29:06,370 DEBUG [main] [org.mybatis.spring.SqlSessionFactoryBean] - Parsed mapper file: 'file [D:\Workspaces\MyEclipse 10\nfdw-basic\nfdw-sys\target\classes\mapper\SysUserMapper.xml]'
+2019-02-19 16:29:06,448 DEBUG [main] [org.mybatis.spring.SqlSessionFactoryBean] - Parsed mapper file: 'file [D:\Workspaces\MyEclipse 10\nfdw-basic\nfdw-activiti\target\classes\mapper\ActAssigneeMapper.xml]'
+2019-02-19 16:29:06,494 DEBUG [main] [org.mybatis.spring.SqlSessionFactoryBean] - Parsed mapper file: 'file [D:\Workspaces\MyEclipse 10\nfdw-basic\nfdw-activiti\target\classes\mapper\UserLeaveMapper.xml]'
+2019-02-19 16:29:06,526 DEBUG [main] [org.mybatis.spring.SqlSessionFactoryBean] - Parsed mapper file: 'file [D:\Workspaces\MyEclipse 10\nfdw-basic\nfdw-section\target\classes\mapper\DepartmentApplyMapper.xml]'
+2019-02-19 16:29:06,604 DEBUG [main] [org.mybatis.spring.SqlSessionFactoryBean] - Parsed mapper file: 'file [D:\Workspaces\MyEclipse 10\nfdw-basic\nfdw-equipment\target\classes\mapper\EquipmentMapper.xml]'
+2019-02-19 16:29:06,635 DEBUG [main] [org.mybatis.spring.SqlSessionFactoryBean] - Parsed mapper file: 'file [D:\Workspaces\MyEclipse 10\nfdw-basic\nfdw-equipment\target\classes\mapper\TerminalMapper.xml]'
+2019-02-19 16:29:06,650 DEBUG [main] [org.mybatis.spring.SqlSessionFactoryBean] - Parsed mapper file: 'file [D:\Workspaces\MyEclipse 10\nfdw-basic\nfdw-equipment\target\classes\mapper\TerminalPerformanceMapper.xml]'
+2019-02-19 16:29:06,666 DEBUG [main] [org.mybatis.spring.SqlSessionFactoryBean] - Parsed mapper file: 'file [D:\Workspaces\MyEclipse 10\nfdw-basic\nfdw-equipment\target\classes\mapper\TerminalWarningMapper.xml]'
+2019-02-19 16:29:06,697 DEBUG [main] [org.mybatis.spring.SqlSessionFactoryBean] - Parsed mapper file: 'file [D:\Workspaces\MyEclipse 10\nfdw-basic\nfdw-card\target\classes\mapper\CardFlowMapper.xml]'
+2019-02-19 16:29:06,775 DEBUG [main] [org.mybatis.spring.SqlSessionFactoryBean] - Parsed mapper file: 'file [D:\Workspaces\MyEclipse 10\nfdw-basic\nfdw-card\target\classes\mapper\CardMapper.xml]'
+2019-02-19 16:29:06,791 DEBUG [main] [org.mybatis.spring.SqlSessionFactoryBean] - Parsed mapper file: 'file [D:\Workspaces\MyEclipse 10\nfdw-basic\nfdw-card\target\classes\mapper\DnManagementMapper.xml]'
+2019-02-19 16:29:06,853 DEBUG [main] [org.mybatis.spring.SqlSessionFactoryBean] - Parsed mapper file: 'file [D:\Workspaces\MyEclipse 10\nfdw-basic\nfdw-card\target\classes\mapper\LineManageMapper.xml]'
+2019-02-19 16:29:06,884 DEBUG [main] [org.mybatis.spring.SqlSessionFactoryBean] - Parsed mapper file: 'file [D:\Workspaces\MyEclipse 10\nfdw-basic\nfdw-card\target\classes\mapper\PublicCableManageMapper.xml]'
+2019-02-19 16:29:06,916 DEBUG [main] [org.mybatis.spring.SqlSessionFactoryBean] - Parsed mapper file: 'file [D:\Workspaces\MyEclipse 10\nfdw-basic\nfdw-home\target\classes\mapper\ScreenHomeMapper.xml]'
+2019-02-19 16:29:38,231 DEBUG [main] [org.apache.ibatis.logging.LogFactory] - Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2019-02-19 16:29:51,384 DEBUG [Thread-4] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:29:51,416 DEBUG [Thread-4] [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3aa234f4]
+2019-02-19 16:29:51,556 DEBUG [Thread-4] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@f28f747] will be managed by Spring
+2019-02-19 16:29:51,572 DEBUG [Thread-4] [com.nfdw.mapper.SysJobMapper.selectListByPage] - ==>  Preparing: SELECT * from sys_job WHERE status =? 
+2019-02-19 16:29:51,587 DEBUG [Thread-4] [com.nfdw.mapper.SysJobMapper.selectListByPage] - ==> Parameters: true(Boolean)
+2019-02-19 16:29:51,930 DEBUG [Thread-4] [com.nfdw.mapper.SysJobMapper.selectListByPage] - <==      Total: 0
+2019-02-19 16:29:51,930 DEBUG [Thread-4] [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3aa234f4]
+2019-02-19 16:29:51,930 DEBUG [Thread-4] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3aa234f4]
+2019-02-19 16:29:51,930 DEBUG [Thread-4] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3aa234f4]
+2019-02-19 16:29:51,930 DEBUG [Thread-4] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3aa234f4]
+2019-02-19 16:31:08,254 DEBUG [http-nio-8081-exec-10] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:31:08,254 DEBUG [http-nio-8081-exec-10] [org.mybatis.spring.SqlSessionUtils] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@74adee10] was not registered for synchronization because synchronization is not active
+2019-02-19 16:31:08,300 DEBUG [http-nio-8081-exec-10] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@f28f747] will not be managed by Spring
+2019-02-19 16:31:08,300 DEBUG [http-nio-8081-exec-10] [com.nfdw.mapper.SysUserMapper.login] - ==>  Preparing: select u.*,d.gzarea from sys_user u left join sys_department d on u.department_id = d.id where u.username=? 
+2019-02-19 16:31:08,366 DEBUG [http-nio-8081-exec-10] [com.nfdw.mapper.SysUserMapper.login] - ==> Parameters: admin(String)
+2019-02-19 16:31:08,448 DEBUG [http-nio-8081-exec-10] [com.nfdw.mapper.SysUserMapper.login] - <==      Total: 1
+2019-02-19 16:31:08,451 DEBUG [http-nio-8081-exec-10] [org.mybatis.spring.SqlSessionUtils] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@74adee10]
+2019-02-19 16:31:08,451 DEBUG [http-nio-8081-exec-10] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:31:08,451 DEBUG [http-nio-8081-exec-10] [org.mybatis.spring.SqlSessionUtils] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@763e5d39] was not registered for synchronization because synchronization is not active
+2019-02-19 16:31:08,451 DEBUG [http-nio-8081-exec-10] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@f28f747] will not be managed by Spring
+2019-02-19 16:31:08,451 DEBUG [http-nio-8081-exec-10] [com.nfdw.mapper.SysMenuMapper.getUserMenu] - ==>  Preparing: select concat(?,m.url) as url, m.*,r.id as rid,r.role_name as role_name,r.remark as remark from sys_menu m left join sys_role_menu rm on m.id=rm.menu_id left join sys_role r on rm.role_id=r.id left join sys_role_user ru on r.id=ru.role_id where ru.user_id =? order by m.order_num asc 
+2019-02-19 16:31:08,463 DEBUG [http-nio-8081-exec-10] [com.nfdw.mapper.SysMenuMapper.getUserMenu] - ==> Parameters: /nfdw-admin(String), acfc0e9232f54732a5d9ffe9071bf572(String)
+2019-02-19 16:31:08,827 DEBUG [http-nio-8081-exec-10] [com.nfdw.mapper.SysMenuMapper.getUserMenu] - <==      Total: 64
+2019-02-19 16:31:08,830 DEBUG [http-nio-8081-exec-10] [org.mybatis.spring.SqlSessionUtils] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@763e5d39]
+2019-02-19 16:31:13,750 DEBUG [http-nio-8081-exec-6] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:31:13,750 DEBUG [http-nio-8081-exec-6] [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@adb3ab6]
+2019-02-19 16:31:13,750 DEBUG [http-nio-8081-exec-6] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@f28f747] will be managed by Spring
+2019-02-19 16:31:13,750 DEBUG [http-nio-8081-exec-6] [screenHomeMapper.findCardFlowData] - ==>  Preparing: select IFNULL(SUM(a.dayflow),0) dayflow,b.dvalue operator from r_cardflow_report a right join t_system_dictionary b on a.operator=b.code and date_format(collectdate,'%Y-%m-%d') where b.dgroup='operator_type' group by b.dvalue; 
+2019-02-19 16:31:13,755 DEBUG [http-nio-8081-exec-6] [screenHomeMapper.findCardFlowData] - ==> Parameters: 
+2019-02-19 16:31:13,812 DEBUG [http-nio-8081-exec-6] [screenHomeMapper.findCardFlowData] - <==      Total: 3
+2019-02-19 16:31:13,812 DEBUG [http-nio-8081-exec-6] [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@adb3ab6]
+2019-02-19 16:31:13,812 DEBUG [http-nio-8081-exec-6] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@adb3ab6]
+2019-02-19 16:31:13,812 DEBUG [http-nio-8081-exec-6] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@adb3ab6]
+2019-02-19 16:31:13,815 DEBUG [http-nio-8081-exec-6] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@adb3ab6]
+2019-02-19 16:31:14,047 DEBUG [http-nio-8081-exec-10] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:31:14,047 DEBUG [http-nio-8081-exec-10] [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4dca15a7]
+2019-02-19 16:31:14,047 DEBUG [http-nio-8081-exec-10] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@f28f747] will be managed by Spring
+2019-02-19 16:31:14,047 DEBUG [http-nio-8081-exec-10] [screenHomeMapper.selectOutlineNumOfRegion] - ==>  Preparing: SELECT t.dvalue as regionName,t.code as regionId, CAST(sum(CASE WHEN b.status = 0 or b.status IS NULL THEN 0 ELSE 1 END) AS SIGNED)AS onlineNum, CAST(sum(CASE WHEN b.status = 0 THEN 1 ELSE 0 END) AS SIGNED) AS outlineNum FROM b_ct_terminal b RIGHT JOIN t_system_dictionary t ON b.regionid = t.code WHERE t.dgroup='region_type' GROUP BY t.code; 
+2019-02-19 16:31:14,056 DEBUG [http-nio-8081-exec-10] [screenHomeMapper.selectOutlineNumOfRegion] - ==> Parameters: 
+2019-02-19 16:31:14,116 DEBUG [http-nio-8081-exec-10] [screenHomeMapper.selectOutlineNumOfRegion] - <==      Total: 12
+2019-02-19 16:31:14,116 DEBUG [http-nio-8081-exec-10] [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4dca15a7]
+2019-02-19 16:31:14,148 DEBUG [http-nio-8081-exec-10] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4dca15a7]
+2019-02-19 16:31:14,148 DEBUG [http-nio-8081-exec-10] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4dca15a7]
+2019-02-19 16:31:14,148 DEBUG [http-nio-8081-exec-10] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4dca15a7]
+2019-02-19 16:31:14,283 DEBUG [http-nio-8081-exec-3] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:31:14,283 DEBUG [http-nio-8081-exec-3] [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7b72f5c4]
+2019-02-19 16:31:14,283 DEBUG [http-nio-8081-exec-3] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@f28f747] will be managed by Spring
+2019-02-19 16:31:14,283 DEBUG [http-nio-8081-exec-3] [screenHomeMapper.selectEquipmentBusinesstypeCount] - ==>  Preparing: select (select count(*) from b_ct_terminal) as total ,(select count(*) from b_ct_terminal where businesstype=1) as peiwang ,(select count(*) from b_ct_terminal where businesstype=2) as jiliang ,(select count(*) from b_ct_terminal where businesstype=3) as cdz ,(select count(*) from b_ct_terminal where businesstype=4) as sd ,(select count(*) from b_ct_terminal where businesstype=5) as dy ,(select count(*) from b_ct_terminal where businesstype=6) as jc ,(select count(*) from b_ct_terminal where businesstype=7) as fc ,(select count(*) from b_ct_terminal where businesstype=8) as pb 
+2019-02-19 16:31:14,286 DEBUG [http-nio-8081-exec-1] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:31:14,286 DEBUG [http-nio-8081-exec-1] [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b8a90ad]
+2019-02-19 16:31:14,286 DEBUG [http-nio-8081-exec-1] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@75005f1] will be managed by Spring
+2019-02-19 16:31:14,286 DEBUG [http-nio-8081-exec-1] [screenHomeMapper.selectSeriousWarningDatas] - ==>  Preparing: SELECT CAST(count(*) AS SIGNED) as totalWarningNum, CAST(sum(CASE WHEN snr < 9 or signalstrength < -100 THEN 1 ELSE 0 END) AS SIGNED) AS seriousStatusNum FROM b_ct_warning_mld WHERE 1 = 1 AND status = 0 ; 
+2019-02-19 16:31:14,288 DEBUG [http-nio-8081-exec-1] [screenHomeMapper.selectSeriousWarningDatas] - ==> Parameters: 
+2019-02-19 16:31:14,331 DEBUG [http-nio-8081-exec-3] [screenHomeMapper.selectEquipmentBusinesstypeCount] - ==> Parameters: 
+2019-02-19 16:31:14,336 DEBUG [http-nio-8081-exec-1] [screenHomeMapper.selectSeriousWarningDatas] - <==      Total: 1
+2019-02-19 16:31:14,336 DEBUG [http-nio-8081-exec-1] [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b8a90ad]
+2019-02-19 16:31:14,336 DEBUG [http-nio-8081-exec-1] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b8a90ad]
+2019-02-19 16:31:14,336 DEBUG [http-nio-8081-exec-1] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b8a90ad]
+2019-02-19 16:31:14,336 DEBUG [http-nio-8081-exec-1] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b8a90ad]
+2019-02-19 16:31:14,388 DEBUG [http-nio-8081-exec-3] [screenHomeMapper.selectEquipmentBusinesstypeCount] - <==      Total: 1
+2019-02-19 16:31:14,388 DEBUG [http-nio-8081-exec-3] [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7b72f5c4]
+2019-02-19 16:31:14,388 DEBUG [http-nio-8081-exec-3] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7b72f5c4]
+2019-02-19 16:31:14,388 DEBUG [http-nio-8081-exec-3] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7b72f5c4]
+2019-02-19 16:31:14,388 DEBUG [http-nio-8081-exec-3] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7b72f5c4]
+2019-02-19 16:31:14,503 DEBUG [http-nio-8081-exec-5] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:31:14,503 DEBUG [http-nio-8081-exec-5] [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4546e3e9]
+2019-02-19 16:31:14,506 DEBUG [http-nio-8081-exec-5] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@75005f1] will be managed by Spring
+2019-02-19 16:31:14,506 DEBUG [http-nio-8081-exec-5] [screenHomeMapper.getCountCard] - ==>  Preparing: SELECT CAST(count(*) AS SIGNED) as countCard, CAST( sum(CASE WHEN onlinestatus = 1 THEN 1 ELSE 0 END) AS SIGNED )AS nozaixian , CAST( sum(CASE WHEN onlinestatus = 0 THEN 1 ELSE 0 END) AS SIGNED )AS zaixian , CAST(sum(CASE WHEN used = 0 or used IS NULL THEN 1 ELSE 0 END) AS SIGNED)AS unUsedFlowNum, CAST(sum(CASE WHEN ismaxpkginfo =0 THEN 1 ELSE 0 END) AS SIGNED)AS chaoliu, CAST(sum(CASE WHEN operator=1 THEN 1 ELSE 0 END) AS SIGNED)AS ydnum, CAST(sum(CASE WHEN operator=2 THEN 1 ELSE 0 END) AS SIGNED)AS ltnum, CAST(sum(CASE WHEN operator=3 THEN 1 ELSE 0 END) AS SIGNED)AS dxnum, CAST(sum(CASE WHEN businessstatus=2 THEN 1 ELSE 0 END) AS SIGNED)AS tingji, CAST(sum(CASE WHEN businesstype=1 THEN 1 ELSE 0 END) AS SIGNED)AS pwnum, CAST(sum(CASE WHEN businesstype=2 THEN 1 ELSE 0 END) AS SIGNED)AS jlnum, CAST(sum(CASE WHEN businesstype=3 THEN 1 ELSE 0 END) AS SIGNED)AS cdznum, CAST(sum(CASE WHEN businesstype=4 THEN 1 ELSE 0 END) AS SIGNED)AS sdjcnum, CAST(sum(CASE WHEN businesstype=5 THEN 1 ELSE 0 END) AS SIGNED)AS dynum, CAST(sum(CASE WHEN businesstype=6 THEN 1 ELSE 0 END) AS SIGNED)AS jcnum, CAST(sum(CASE WHEN businesstype=7 THEN 1 ELSE 0 END) AS SIGNED)AS fknum, CAST(sum(CASE WHEN businesstype=8 THEN 1 ELSE 0 END) AS SIGNED)AS pdnum FROM b_nc_card WHERE delstatus='1' 
+2019-02-19 16:31:14,536 DEBUG [http-nio-8081-exec-5] [screenHomeMapper.getCountCard] - ==> Parameters: 
+2019-02-19 16:31:14,583 DEBUG [http-nio-8081-exec-5] [screenHomeMapper.getCountCard] - <==      Total: 1
+2019-02-19 16:31:14,583 DEBUG [http-nio-8081-exec-5] [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4546e3e9]
+2019-02-19 16:31:14,583 DEBUG [http-nio-8081-exec-5] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4546e3e9]
+2019-02-19 16:31:14,583 DEBUG [http-nio-8081-exec-5] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4546e3e9]
+2019-02-19 16:31:14,583 DEBUG [http-nio-8081-exec-5] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4546e3e9]
+2019-02-19 16:31:14,636 DEBUG [http-nio-8081-exec-9] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:31:14,638 DEBUG [http-nio-8081-exec-9] [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c075dc0]
+2019-02-19 16:31:14,638 DEBUG [http-nio-8081-exec-9] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@f28f747] will be managed by Spring
+2019-02-19 16:31:14,641 DEBUG [http-nio-8081-exec-9] [screenHomeMapper.selectUnWarningDatas] - ==>  Preparing: SELECT CAST(count(*) AS SIGNED) as unWarningNum FROM b_ct_warning_mld WHERE 1 = 1 AND status = 1 
+2019-02-19 16:31:14,651 DEBUG [http-nio-8081-exec-9] [screenHomeMapper.selectUnWarningDatas] - ==> Parameters: 
+2019-02-19 16:31:14,703 DEBUG [http-nio-8081-exec-9] [screenHomeMapper.selectUnWarningDatas] - <==      Total: 1
+2019-02-19 16:31:14,703 DEBUG [http-nio-8081-exec-9] [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c075dc0]
+2019-02-19 16:31:14,703 DEBUG [http-nio-8081-exec-9] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c075dc0]
+2019-02-19 16:31:14,703 DEBUG [http-nio-8081-exec-9] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c075dc0]
+2019-02-19 16:31:14,706 DEBUG [http-nio-8081-exec-9] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c075dc0]
+2019-02-19 16:31:14,756 DEBUG [http-nio-8081-exec-7] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:31:14,756 DEBUG [http-nio-8081-exec-7] [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@bb57804]
+2019-02-19 16:31:14,756 DEBUG [http-nio-8081-exec-7] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@75005f1] will be managed by Spring
+2019-02-19 16:31:14,756 DEBUG [http-nio-8081-exec-7] [screenHomeMapper.selectGeneralWarningDatas] - ==>  Preparing: SELECT CAST(sum(CASE WHEN cpuused > 50 or memused > 80 or moduletemperature > 45 THEN 1 ELSE 0 END) AS SIGNED) AS generalStatusNum FROM b_ct_warning_mld WHERE 1 = 1 AND status = 0 and snr >= 9 and signalstrength >= -100; 
+2019-02-19 16:31:14,781 DEBUG [http-nio-8081-exec-7] [screenHomeMapper.selectGeneralWarningDatas] - ==> Parameters: 
+2019-02-19 16:31:15,016 DEBUG [http-nio-8081-exec-4] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:31:15,016 DEBUG [http-nio-8081-exec-4] [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c478ca1]
+2019-02-19 16:31:15,016 DEBUG [http-nio-8081-exec-4] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@56bfe7d1] will be managed by Spring
+2019-02-19 16:31:15,016 DEBUG [http-nio-8081-exec-4] [screenHomeMapper.selectOutLineDatas] - ==>  Preparing: SELECT CAST(count(*) AS SIGNED) as outLineNum FROM b_ct_terminal WHERE 1 = 1 AND status = 0 
+2019-02-19 16:31:15,023 DEBUG [http-nio-8081-exec-4] [screenHomeMapper.selectOutLineDatas] - ==> Parameters: 
+2019-02-19 16:31:15,303 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:31:15,303 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ad18700]
+2019-02-19 16:31:15,303 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@f28f747] will be managed by Spring
+2019-02-19 16:31:15,303 DEBUG [http-nio-8081-exec-8] [screenHomeMapper.selectFactorycodeGroup] - ==>  Preparing: SELECT count(a.factorycode)as codenum ,b.`code` ,b.dvalue FROM b_ct_warning_mld a RIGHT JOIN t_system_dictionary b on a.factorycode = b.code and a.`status`=0 WHERE dgroup='factory_type' GROUP BY b.code 
+2019-02-19 16:31:15,308 DEBUG [http-nio-8081-exec-8] [screenHomeMapper.selectFactorycodeGroup] - ==> Parameters: 
+2019-02-19 16:31:15,311 DEBUG [http-nio-8081-exec-4] [screenHomeMapper.selectOutLineDatas] - <==      Total: 1
+2019-02-19 16:31:15,311 DEBUG [http-nio-8081-exec-4] [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c478ca1]
+2019-02-19 16:31:15,311 DEBUG [http-nio-8081-exec-4] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c478ca1]
+2019-02-19 16:31:15,311 DEBUG [http-nio-8081-exec-4] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c478ca1]
+2019-02-19 16:31:15,311 DEBUG [http-nio-8081-exec-4] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c478ca1]
+2019-02-19 16:31:15,332 DEBUG [http-nio-8081-exec-7] [screenHomeMapper.selectGeneralWarningDatas] - <==      Total: 1
+2019-02-19 16:31:15,332 DEBUG [http-nio-8081-exec-7] [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@bb57804]
+2019-02-19 16:31:15,332 DEBUG [http-nio-8081-exec-7] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@bb57804]
+2019-02-19 16:31:15,332 DEBUG [http-nio-8081-exec-7] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@bb57804]
+2019-02-19 16:31:15,332 DEBUG [http-nio-8081-exec-7] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@bb57804]
+2019-02-19 16:31:15,354 DEBUG [http-nio-8081-exec-8] [screenHomeMapper.selectFactorycodeGroup] - <==      Total: 6
+2019-02-19 16:31:15,354 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ad18700]
+2019-02-19 16:31:15,354 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ad18700]
+2019-02-19 16:31:15,354 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ad18700]
+2019-02-19 16:31:15,354 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ad18700]
+2019-02-19 16:31:19,094 DEBUG [http-nio-8081-exec-2] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:31:19,094 DEBUG [http-nio-8081-exec-2] [org.mybatis.spring.SqlSessionUtils] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@17f89fdb] was not registered for synchronization because synchronization is not active
+2019-02-19 16:31:19,097 DEBUG [http-nio-8081-exec-2] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@4df2f954] will not be managed by Spring
+2019-02-19 16:31:19,103 DEBUG [http-nio-8081-exec-2] [com.nfdw.mapper.SysMenuMapper.selectAll] - ==>  Preparing: SELECT id,name,p_id,url,order_num,icon,create_by,create_date,update_by,update_date,menu_department,permission,menu_type FROM sys_menu 
+2019-02-19 16:31:19,123 DEBUG [http-nio-8081-exec-2] [com.nfdw.mapper.SysMenuMapper.selectAll] - ==> Parameters: 
+2019-02-19 16:31:19,253 DEBUG [http-nio-8081-exec-2] [com.nfdw.mapper.SysMenuMapper.selectAll] - <==      Total: 73
+2019-02-19 16:31:19,255 DEBUG [http-nio-8081-exec-2] [org.mybatis.spring.SqlSessionUtils] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@17f89fdb]
+2019-02-19 16:31:50,369 DEBUG [http-nio-8081-exec-4] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:31:50,369 DEBUG [http-nio-8081-exec-4] [org.mybatis.spring.SqlSessionUtils] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@73929c2d] was not registered for synchronization because synchronization is not active
+2019-02-19 16:31:50,369 DEBUG [http-nio-8081-exec-4] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@4df2f954] will not be managed by Spring
+2019-02-19 16:31:50,372 DEBUG [http-nio-8081-exec-4] [com.nfdw.mapper.SysMenuMapper.selectByPrimaryKey] - ==>  Preparing: SELECT id,name,p_id,url,order_num,icon,create_by,create_date,update_by,update_date,menu_department,permission,menu_type FROM sys_menu WHERE id = ? 
+2019-02-19 16:31:50,372 DEBUG [http-nio-8081-exec-4] [com.nfdw.mapper.SysMenuMapper.selectByPrimaryKey] - ==> Parameters: 3eecdd65f4b74564a0c8347ae7eed2d2(String)
+2019-02-19 16:31:50,449 DEBUG [http-nio-8081-exec-4] [com.nfdw.mapper.SysMenuMapper.selectByPrimaryKey] - <==      Total: 1
+2019-02-19 16:31:50,451 DEBUG [http-nio-8081-exec-4] [org.mybatis.spring.SqlSessionUtils] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@73929c2d]
+2019-02-19 16:31:50,451 DEBUG [http-nio-8081-exec-4] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:31:50,454 DEBUG [http-nio-8081-exec-4] [org.mybatis.spring.SqlSessionUtils] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@792f67de] was not registered for synchronization because synchronization is not active
+2019-02-19 16:31:50,454 DEBUG [http-nio-8081-exec-4] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@4df2f954] will not be managed by Spring
+2019-02-19 16:31:50,454 DEBUG [http-nio-8081-exec-4] [com.nfdw.mapper.SysMenuMapper.selectAll] - ==>  Preparing: SELECT id,name,p_id,url,order_num,icon,create_by,create_date,update_by,update_date,menu_department,permission,menu_type FROM sys_menu 
+2019-02-19 16:31:50,456 DEBUG [http-nio-8081-exec-4] [com.nfdw.mapper.SysMenuMapper.selectAll] - ==> Parameters: 
+2019-02-19 16:31:50,589 DEBUG [http-nio-8081-exec-4] [com.nfdw.mapper.SysMenuMapper.selectAll] - <==      Total: 73
+2019-02-19 16:31:50,589 DEBUG [http-nio-8081-exec-4] [org.mybatis.spring.SqlSessionUtils] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@792f67de]
+2019-02-19 16:37:49,850 DEBUG [http-nio-8081-exec-4] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:37:49,850 DEBUG [http-nio-8081-exec-4] [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4604506e]
+2019-02-19 16:37:50,072 DEBUG [http-nio-8081-exec-4] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@4df2f954] will be managed by Spring
+2019-02-19 16:37:50,075 DEBUG [http-nio-8081-exec-4] [com.nfdw.mapper.UserLeaveMapper.selectListByPage_COUNT] - ==>  Preparing: SELECT count(0) FROM user_leave WHERE user_id = ? 
+2019-02-19 16:37:50,075 DEBUG [http-nio-8081-exec-4] [com.nfdw.mapper.UserLeaveMapper.selectListByPage_COUNT] - ==> Parameters: acfc0e9232f54732a5d9ffe9071bf572(String)
+2019-02-19 16:37:50,122 DEBUG [http-nio-8081-exec-4] [com.nfdw.mapper.UserLeaveMapper.selectListByPage_COUNT] - <==      Total: 1
+2019-02-19 16:37:50,125 DEBUG [http-nio-8081-exec-4] [com.nfdw.mapper.UserLeaveMapper.selectListByPage] - ==>  Preparing: SELECT * from user_leave WHERE user_id=? LIMIT ? 
+2019-02-19 16:37:50,127 DEBUG [http-nio-8081-exec-4] [com.nfdw.mapper.UserLeaveMapper.selectListByPage] - ==> Parameters: acfc0e9232f54732a5d9ffe9071bf572(String), 10(Integer)
+2019-02-19 16:37:50,172 DEBUG [http-nio-8081-exec-4] [com.nfdw.mapper.UserLeaveMapper.selectListByPage] - <==      Total: 2
+2019-02-19 16:37:50,172 DEBUG [http-nio-8081-exec-4] [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4604506e]
+2019-02-19 16:37:50,172 DEBUG [http-nio-8081-exec-4] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4604506e]
+2019-02-19 16:37:50,172 DEBUG [http-nio-8081-exec-4] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4604506e]
+2019-02-19 16:37:50,172 DEBUG [http-nio-8081-exec-4] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4604506e]
+2019-02-19 16:38:04,570 DEBUG [http-nio-8081-exec-9] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:38:04,570 DEBUG [http-nio-8081-exec-9] [org.mybatis.spring.SqlSessionUtils] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@74d7f0ff] was not registered for synchronization because synchronization is not active
+2019-02-19 16:38:04,573 DEBUG [http-nio-8081-exec-9] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@4df2f954] will not be managed by Spring
+2019-02-19 16:38:04,575 DEBUG [http-nio-8081-exec-9] [com.nfdw.mapper.SysRoleUserMapper.selectByCondition] - ==>  Preparing: select * from sys_role_user WHERE user_id =? 
+2019-02-19 16:38:04,578 DEBUG [http-nio-8081-exec-9] [com.nfdw.mapper.SysRoleUserMapper.selectByCondition] - ==> Parameters: acfc0e9232f54732a5d9ffe9071bf572(String)
+2019-02-19 16:38:04,623 DEBUG [http-nio-8081-exec-9] [com.nfdw.mapper.SysRoleUserMapper.selectByCondition] - <==      Total: 1
+2019-02-19 16:38:04,623 DEBUG [http-nio-8081-exec-9] [org.mybatis.spring.SqlSessionUtils] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@74d7f0ff]
+2019-02-19 16:38:40,289 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:38:40,289 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@40f3db3]
+2019-02-19 16:38:40,298 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@4df2f954] will be managed by Spring
+2019-02-19 16:38:40,298 DEBUG [http-nio-8081-exec-8] [com.nfdw.mapper.UserLeaveMapper.insertSelective] - ==>  Preparing: INSERT INTO user_leave ( id,user_id,user_name,process_instance_Id,reason,days,begin_time,end_time ) VALUES( ?,?,?,?,?,?,?,? ) 
+2019-02-19 16:38:40,333 DEBUG [http-nio-8081-exec-8] [com.nfdw.mapper.UserLeaveMapper.insertSelective] - ==> Parameters: aaf3d30d4de1410fa5e574af73895568(String), acfc0e9232f54732a5d9ffe9071bf572(String), admin(String), 2018(String), 11(String), 3(Integer), 2019-02-19 00:00:00.0(Timestamp), 2019-02-19 00:00:00.0(Timestamp)
+2019-02-19 16:38:40,333 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@40f3db3]
+2019-02-19 16:38:40,333 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@40f3db3]
+2019-02-19 16:38:40,558 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@40f3db3]
+2019-02-19 16:38:40,558 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@40f3db3]
+2019-02-19 16:38:43,650 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:38:43,650 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@30595086]
+2019-02-19 16:38:43,650 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@4df2f954] will be managed by Spring
+2019-02-19 16:38:43,650 DEBUG [http-nio-8081-exec-8] [com.nfdw.mapper.UserLeaveMapper.selectByPrimaryKey] - ==>  Preparing: SELECT id,user_id,user_name,process_instance_Id,status,create_date,create_by,update_date,update_by,reason,task_name,urlpath,submittimes,days,begin_time,end_time FROM user_leave WHERE id = ? 
+2019-02-19 16:38:43,653 DEBUG [http-nio-8081-exec-8] [com.nfdw.mapper.UserLeaveMapper.selectByPrimaryKey] - ==> Parameters: aaf3d30d4de1410fa5e574af73895568(String)
+2019-02-19 16:38:43,696 DEBUG [http-nio-8081-exec-8] [com.nfdw.mapper.UserLeaveMapper.selectByPrimaryKey] - <==      Total: 1
+2019-02-19 16:38:43,696 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@30595086]
+2019-02-19 16:38:43,696 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@30595086]
+2019-02-19 16:38:43,696 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@30595086]
+2019-02-19 16:38:43,696 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@30595086]
+2019-02-19 16:38:43,874 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:38:43,874 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@f3ba333]
+2019-02-19 16:38:43,874 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@4df2f954] will be managed by Spring
+2019-02-19 16:38:43,874 DEBUG [http-nio-8081-exec-8] [com.nfdw.mapper.UserLeaveMapper.updateByPrimaryKeySelective] - ==>  Preparing: UPDATE user_leave SET id = id,user_id = ?,user_name = ?,process_instance_Id = ?,reason = ?,urlpath = ?,submittimes = ?,days = ?,begin_time = ?,end_time = ? WHERE id = ? 
+2019-02-19 16:38:43,876 DEBUG [http-nio-8081-exec-8] [com.nfdw.mapper.UserLeaveMapper.updateByPrimaryKeySelective] - ==> Parameters: acfc0e9232f54732a5d9ffe9071bf572(String), admin(String), 52501(String), 11(String), /leave/readOnlyLeave/aaf3d30d4de1410fa5e574af73895568(String), 1(Integer), 3(Integer), 2019-02-19 00:00:00.0(Timestamp), 2019-02-19 00:00:00.0(Timestamp), aaf3d30d4de1410fa5e574af73895568(String)
+2019-02-19 16:38:43,876 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@f3ba333]
+2019-02-19 16:38:43,879 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@f3ba333]
+2019-02-19 16:38:43,921 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@f3ba333]
+2019-02-19 16:38:43,921 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@f3ba333]
+2019-02-19 16:38:44,101 DEBUG [http-nio-8081-exec-4] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:38:44,101 DEBUG [http-nio-8081-exec-4] [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f363904]
+2019-02-19 16:38:44,101 DEBUG [http-nio-8081-exec-4] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@4df2f954] will be managed by Spring
+2019-02-19 16:38:44,101 DEBUG [http-nio-8081-exec-4] [com.nfdw.mapper.UserLeaveMapper.selectListByPage_COUNT] - ==>  Preparing: SELECT count(0) FROM user_leave WHERE user_id = ? 
+2019-02-19 16:38:44,104 DEBUG [http-nio-8081-exec-4] [com.nfdw.mapper.UserLeaveMapper.selectListByPage_COUNT] - ==> Parameters: acfc0e9232f54732a5d9ffe9071bf572(String)
+2019-02-19 16:38:44,126 DEBUG [http-nio-8081-exec-2] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:38:44,129 DEBUG [http-nio-8081-exec-2] [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2761ee00]
+2019-02-19 16:38:44,129 DEBUG [http-nio-8081-exec-2] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@f28f747] will be managed by Spring
+2019-02-19 16:38:44,129 DEBUG [http-nio-8081-exec-2] [com.nfdw.mapper.UserLeaveMapper.insertSelective] - ==>  Preparing: INSERT INTO user_leave ( id,user_id,user_name,process_instance_Id,reason,days,begin_time,end_time ) VALUES( ?,?,?,?,?,?,?,? ) 
+2019-02-19 16:38:44,136 DEBUG [http-nio-8081-exec-2] [com.nfdw.mapper.UserLeaveMapper.insertSelective] - ==> Parameters: 0538cefe7380414ba81a350339345901(String), acfc0e9232f54732a5d9ffe9071bf572(String), admin(String), 2018(String), 11(String), 3(Integer), 2019-02-19 00:00:00.0(Timestamp), 2019-02-19 00:00:00.0(Timestamp)
+2019-02-19 16:38:44,136 DEBUG [http-nio-8081-exec-2] [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2761ee00]
+2019-02-19 16:38:44,136 DEBUG [http-nio-8081-exec-2] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2761ee00]
+2019-02-19 16:38:44,181 DEBUG [http-nio-8081-exec-4] [com.nfdw.mapper.UserLeaveMapper.selectListByPage_COUNT] - <==      Total: 1
+2019-02-19 16:38:44,181 DEBUG [http-nio-8081-exec-4] [com.nfdw.mapper.UserLeaveMapper.selectListByPage] - ==>  Preparing: SELECT * from user_leave WHERE user_id=? LIMIT ? 
+2019-02-19 16:38:44,181 DEBUG [http-nio-8081-exec-4] [com.nfdw.mapper.UserLeaveMapper.selectListByPage] - ==> Parameters: acfc0e9232f54732a5d9ffe9071bf572(String), 10(Integer)
+2019-02-19 16:38:44,204 DEBUG [http-nio-8081-exec-2] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2761ee00]
+2019-02-19 16:38:44,204 DEBUG [http-nio-8081-exec-2] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2761ee00]
+2019-02-19 16:38:44,259 DEBUG [http-nio-8081-exec-4] [com.nfdw.mapper.UserLeaveMapper.selectListByPage] - <==      Total: 3
+2019-02-19 16:38:44,259 DEBUG [http-nio-8081-exec-4] [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f363904]
+2019-02-19 16:38:44,259 DEBUG [http-nio-8081-exec-4] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f363904]
+2019-02-19 16:38:44,259 DEBUG [http-nio-8081-exec-4] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f363904]
+2019-02-19 16:38:44,259 DEBUG [http-nio-8081-exec-4] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f363904]
+2019-02-19 16:38:45,257 DEBUG [http-nio-8081-exec-2] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:38:45,257 DEBUG [http-nio-8081-exec-2] [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59b86ecf]
+2019-02-19 16:38:45,259 DEBUG [http-nio-8081-exec-2] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@f28f747] will be managed by Spring
+2019-02-19 16:38:45,259 DEBUG [http-nio-8081-exec-2] [com.nfdw.mapper.UserLeaveMapper.selectByPrimaryKey] - ==>  Preparing: SELECT id,user_id,user_name,process_instance_Id,status,create_date,create_by,update_date,update_by,reason,task_name,urlpath,submittimes,days,begin_time,end_time FROM user_leave WHERE id = ? 
+2019-02-19 16:38:45,259 DEBUG [http-nio-8081-exec-2] [com.nfdw.mapper.UserLeaveMapper.selectByPrimaryKey] - ==> Parameters: 0538cefe7380414ba81a350339345901(String)
+2019-02-19 16:38:45,306 DEBUG [http-nio-8081-exec-2] [com.nfdw.mapper.UserLeaveMapper.selectByPrimaryKey] - <==      Total: 1
+2019-02-19 16:38:45,306 DEBUG [http-nio-8081-exec-2] [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59b86ecf]
+2019-02-19 16:38:45,306 DEBUG [http-nio-8081-exec-2] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59b86ecf]
+2019-02-19 16:38:45,306 DEBUG [http-nio-8081-exec-2] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59b86ecf]
+2019-02-19 16:38:45,306 DEBUG [http-nio-8081-exec-2] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59b86ecf]
+2019-02-19 16:38:45,441 DEBUG [http-nio-8081-exec-2] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:38:45,441 DEBUG [http-nio-8081-exec-2] [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@74fcad09]
+2019-02-19 16:38:45,443 DEBUG [http-nio-8081-exec-2] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@f28f747] will be managed by Spring
+2019-02-19 16:38:45,443 DEBUG [http-nio-8081-exec-2] [com.nfdw.mapper.UserLeaveMapper.updateByPrimaryKeySelective] - ==>  Preparing: UPDATE user_leave SET id = id,user_id = ?,user_name = ?,process_instance_Id = ?,reason = ?,urlpath = ?,submittimes = ?,days = ?,begin_time = ?,end_time = ? WHERE id = ? 
+2019-02-19 16:38:45,443 DEBUG [http-nio-8081-exec-2] [com.nfdw.mapper.UserLeaveMapper.updateByPrimaryKeySelective] - ==> Parameters: acfc0e9232f54732a5d9ffe9071bf572(String), admin(String), 52511(String), 11(String), /leave/readOnlyLeave/0538cefe7380414ba81a350339345901(String), 1(Integer), 3(Integer), 2019-02-19 00:00:00.0(Timestamp), 2019-02-19 00:00:00.0(Timestamp), 0538cefe7380414ba81a350339345901(String)
+2019-02-19 16:38:45,443 DEBUG [http-nio-8081-exec-2] [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@74fcad09]
+2019-02-19 16:38:45,443 DEBUG [http-nio-8081-exec-2] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@74fcad09]
+2019-02-19 16:38:45,488 DEBUG [http-nio-8081-exec-2] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@74fcad09]
+2019-02-19 16:38:45,488 DEBUG [http-nio-8081-exec-2] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@74fcad09]
+2019-02-19 16:38:45,673 DEBUG [http-nio-8081-exec-1] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:38:45,676 DEBUG [http-nio-8081-exec-1] [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@580141b1]
+2019-02-19 16:38:45,678 DEBUG [http-nio-8081-exec-1] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@f28f747] will be managed by Spring
+2019-02-19 16:38:45,678 DEBUG [http-nio-8081-exec-1] [com.nfdw.mapper.UserLeaveMapper.insertSelective] - ==>  Preparing: INSERT INTO user_leave ( id,user_id,user_name,process_instance_Id,reason,days,begin_time,end_time ) VALUES( ?,?,?,?,?,?,?,? ) 
+2019-02-19 16:38:45,681 DEBUG [http-nio-8081-exec-1] [com.nfdw.mapper.UserLeaveMapper.insertSelective] - ==> Parameters: 4e3b8f46c89342d58461be50a77d8224(String), acfc0e9232f54732a5d9ffe9071bf572(String), admin(String), 2018(String), 11(String), 3(Integer), 2019-02-19 00:00:00.0(Timestamp), 2019-02-19 00:00:00.0(Timestamp)
+2019-02-19 16:38:45,681 DEBUG [http-nio-8081-exec-1] [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@580141b1]
+2019-02-19 16:38:45,681 DEBUG [http-nio-8081-exec-1] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@580141b1]
+2019-02-19 16:38:45,686 DEBUG [http-nio-8081-exec-10] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:38:45,686 DEBUG [http-nio-8081-exec-10] [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@318112b4]
+2019-02-19 16:38:45,688 DEBUG [http-nio-8081-exec-10] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@4df2f954] will be managed by Spring
+2019-02-19 16:38:45,688 DEBUG [http-nio-8081-exec-10] [com.nfdw.mapper.UserLeaveMapper.selectListByPage_COUNT] - ==>  Preparing: SELECT count(0) FROM user_leave WHERE user_id = ? 
+2019-02-19 16:38:45,691 DEBUG [http-nio-8081-exec-10] [com.nfdw.mapper.UserLeaveMapper.selectListByPage_COUNT] - ==> Parameters: acfc0e9232f54732a5d9ffe9071bf572(String)
+2019-02-19 16:38:45,728 DEBUG [http-nio-8081-exec-1] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@580141b1]
+2019-02-19 16:38:45,728 DEBUG [http-nio-8081-exec-1] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@580141b1]
+2019-02-19 16:38:45,733 DEBUG [http-nio-8081-exec-10] [com.nfdw.mapper.UserLeaveMapper.selectListByPage_COUNT] - <==      Total: 1
+2019-02-19 16:38:45,738 DEBUG [http-nio-8081-exec-10] [com.nfdw.mapper.UserLeaveMapper.selectListByPage] - ==>  Preparing: SELECT * from user_leave WHERE user_id=? LIMIT ? 
+2019-02-19 16:38:45,738 DEBUG [http-nio-8081-exec-10] [com.nfdw.mapper.UserLeaveMapper.selectListByPage] - ==> Parameters: acfc0e9232f54732a5d9ffe9071bf572(String), 10(Integer)
+2019-02-19 16:38:45,788 DEBUG [http-nio-8081-exec-10] [com.nfdw.mapper.UserLeaveMapper.selectListByPage] - <==      Total: 4
+2019-02-19 16:38:45,788 DEBUG [http-nio-8081-exec-10] [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@318112b4]
+2019-02-19 16:38:45,788 DEBUG [http-nio-8081-exec-10] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@318112b4]
+2019-02-19 16:38:45,788 DEBUG [http-nio-8081-exec-10] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@318112b4]
+2019-02-19 16:38:45,788 DEBUG [http-nio-8081-exec-10] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@318112b4]
+2019-02-19 16:38:46,841 DEBUG [http-nio-8081-exec-1] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:38:46,841 DEBUG [http-nio-8081-exec-1] [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2169224f]
+2019-02-19 16:38:46,841 DEBUG [http-nio-8081-exec-1] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@f28f747] will be managed by Spring
+2019-02-19 16:38:46,841 DEBUG [http-nio-8081-exec-1] [com.nfdw.mapper.UserLeaveMapper.selectByPrimaryKey] - ==>  Preparing: SELECT id,user_id,user_name,process_instance_Id,status,create_date,create_by,update_date,update_by,reason,task_name,urlpath,submittimes,days,begin_time,end_time FROM user_leave WHERE id = ? 
+2019-02-19 16:38:46,843 DEBUG [http-nio-8081-exec-1] [com.nfdw.mapper.UserLeaveMapper.selectByPrimaryKey] - ==> Parameters: 4e3b8f46c89342d58461be50a77d8224(String)
+2019-02-19 16:38:46,889 DEBUG [http-nio-8081-exec-1] [com.nfdw.mapper.UserLeaveMapper.selectByPrimaryKey] - <==      Total: 1
+2019-02-19 16:38:46,889 DEBUG [http-nio-8081-exec-1] [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2169224f]
+2019-02-19 16:38:46,889 DEBUG [http-nio-8081-exec-1] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2169224f]
+2019-02-19 16:38:46,889 DEBUG [http-nio-8081-exec-1] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2169224f]
+2019-02-19 16:38:46,889 DEBUG [http-nio-8081-exec-1] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2169224f]
+2019-02-19 16:38:47,044 DEBUG [http-nio-8081-exec-1] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:38:47,044 DEBUG [http-nio-8081-exec-1] [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@494fe97a]
+2019-02-19 16:38:47,047 DEBUG [http-nio-8081-exec-1] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@f28f747] will be managed by Spring
+2019-02-19 16:38:47,047 DEBUG [http-nio-8081-exec-1] [com.nfdw.mapper.UserLeaveMapper.updateByPrimaryKeySelective] - ==>  Preparing: UPDATE user_leave SET id = id,user_id = ?,user_name = ?,process_instance_Id = ?,reason = ?,urlpath = ?,submittimes = ?,days = ?,begin_time = ?,end_time = ? WHERE id = ? 
+2019-02-19 16:38:47,049 DEBUG [http-nio-8081-exec-1] [com.nfdw.mapper.UserLeaveMapper.updateByPrimaryKeySelective] - ==> Parameters: acfc0e9232f54732a5d9ffe9071bf572(String), admin(String), 52521(String), 11(String), /leave/readOnlyLeave/4e3b8f46c89342d58461be50a77d8224(String), 1(Integer), 3(Integer), 2019-02-19 00:00:00.0(Timestamp), 2019-02-19 00:00:00.0(Timestamp), 4e3b8f46c89342d58461be50a77d8224(String)
+2019-02-19 16:38:47,049 DEBUG [http-nio-8081-exec-1] [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@494fe97a]
+2019-02-19 16:38:47,049 DEBUG [http-nio-8081-exec-1] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@494fe97a]
+2019-02-19 16:38:47,099 DEBUG [http-nio-8081-exec-1] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@494fe97a]
+2019-02-19 16:38:47,099 DEBUG [http-nio-8081-exec-1] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@494fe97a]
+2019-02-19 16:38:47,269 DEBUG [http-nio-8081-exec-5] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:38:47,269 DEBUG [http-nio-8081-exec-5] [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a2c036c]
+2019-02-19 16:38:47,272 DEBUG [http-nio-8081-exec-5] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@f28f747] will be managed by Spring
+2019-02-19 16:38:47,272 DEBUG [http-nio-8081-exec-5] [com.nfdw.mapper.UserLeaveMapper.insertSelective] - ==>  Preparing: INSERT INTO user_leave ( id,user_id,user_name,process_instance_Id,reason,days,begin_time,end_time ) VALUES( ?,?,?,?,?,?,?,? ) 
+2019-02-19 16:38:47,272 DEBUG [http-nio-8081-exec-5] [com.nfdw.mapper.UserLeaveMapper.insertSelective] - ==> Parameters: 625d3d86bd15439c96efb07a1931bfe8(String), acfc0e9232f54732a5d9ffe9071bf572(String), admin(String), 2018(String), 11(String), 3(Integer), 2019-02-19 00:00:00.0(Timestamp), 2019-02-19 00:00:00.0(Timestamp)
+2019-02-19 16:38:47,272 DEBUG [http-nio-8081-exec-5] [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a2c036c]
+2019-02-19 16:38:47,272 DEBUG [http-nio-8081-exec-5] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a2c036c]
+2019-02-19 16:38:47,317 DEBUG [http-nio-8081-exec-5] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a2c036c]
+2019-02-19 16:38:47,317 DEBUG [http-nio-8081-exec-5] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a2c036c]
+2019-02-19 16:38:47,352 DEBUG [http-nio-8081-exec-6] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:38:47,352 DEBUG [http-nio-8081-exec-6] [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@177c28f]
+2019-02-19 16:38:47,352 DEBUG [http-nio-8081-exec-6] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@4df2f954] will be managed by Spring
+2019-02-19 16:38:47,352 DEBUG [http-nio-8081-exec-6] [com.nfdw.mapper.UserLeaveMapper.selectListByPage_COUNT] - ==>  Preparing: SELECT count(0) FROM user_leave WHERE user_id = ? 
+2019-02-19 16:38:47,352 DEBUG [http-nio-8081-exec-6] [com.nfdw.mapper.UserLeaveMapper.selectListByPage_COUNT] - ==> Parameters: acfc0e9232f54732a5d9ffe9071bf572(String)
+2019-02-19 16:38:47,394 DEBUG [http-nio-8081-exec-6] [com.nfdw.mapper.UserLeaveMapper.selectListByPage_COUNT] - <==      Total: 1
+2019-02-19 16:38:47,397 DEBUG [http-nio-8081-exec-6] [com.nfdw.mapper.UserLeaveMapper.selectListByPage] - ==>  Preparing: SELECT * from user_leave WHERE user_id=? LIMIT ? 
+2019-02-19 16:38:47,397 DEBUG [http-nio-8081-exec-6] [com.nfdw.mapper.UserLeaveMapper.selectListByPage] - ==> Parameters: acfc0e9232f54732a5d9ffe9071bf572(String), 10(Integer)
+2019-02-19 16:38:47,452 DEBUG [http-nio-8081-exec-6] [com.nfdw.mapper.UserLeaveMapper.selectListByPage] - <==      Total: 6
+2019-02-19 16:38:47,452 DEBUG [http-nio-8081-exec-6] [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@177c28f]
+2019-02-19 16:38:47,452 DEBUG [http-nio-8081-exec-6] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@177c28f]
+2019-02-19 16:38:47,452 DEBUG [http-nio-8081-exec-6] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@177c28f]
+2019-02-19 16:38:47,452 DEBUG [http-nio-8081-exec-6] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@177c28f]
+2019-02-19 16:38:48,387 DEBUG [http-nio-8081-exec-5] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:38:48,387 DEBUG [http-nio-8081-exec-5] [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@91b0ed1]
+2019-02-19 16:38:48,387 DEBUG [http-nio-8081-exec-5] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@f28f747] will be managed by Spring
+2019-02-19 16:38:48,387 DEBUG [http-nio-8081-exec-5] [com.nfdw.mapper.UserLeaveMapper.selectByPrimaryKey] - ==>  Preparing: SELECT id,user_id,user_name,process_instance_Id,status,create_date,create_by,update_date,update_by,reason,task_name,urlpath,submittimes,days,begin_time,end_time FROM user_leave WHERE id = ? 
+2019-02-19 16:38:48,389 DEBUG [http-nio-8081-exec-5] [com.nfdw.mapper.UserLeaveMapper.selectByPrimaryKey] - ==> Parameters: 625d3d86bd15439c96efb07a1931bfe8(String)
+2019-02-19 16:38:48,435 DEBUG [http-nio-8081-exec-5] [com.nfdw.mapper.UserLeaveMapper.selectByPrimaryKey] - <==      Total: 1
+2019-02-19 16:38:48,435 DEBUG [http-nio-8081-exec-5] [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@91b0ed1]
+2019-02-19 16:38:48,435 DEBUG [http-nio-8081-exec-5] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@91b0ed1]
+2019-02-19 16:38:48,435 DEBUG [http-nio-8081-exec-5] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@91b0ed1]
+2019-02-19 16:38:48,435 DEBUG [http-nio-8081-exec-5] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@91b0ed1]
+2019-02-19 16:38:48,573 DEBUG [http-nio-8081-exec-5] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:38:48,573 DEBUG [http-nio-8081-exec-5] [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f98125d]
+2019-02-19 16:38:48,573 DEBUG [http-nio-8081-exec-5] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@f28f747] will be managed by Spring
+2019-02-19 16:38:48,573 DEBUG [http-nio-8081-exec-5] [com.nfdw.mapper.UserLeaveMapper.updateByPrimaryKeySelective] - ==>  Preparing: UPDATE user_leave SET id = id,user_id = ?,user_name = ?,process_instance_Id = ?,reason = ?,urlpath = ?,submittimes = ?,days = ?,begin_time = ?,end_time = ? WHERE id = ? 
+2019-02-19 16:38:48,575 DEBUG [http-nio-8081-exec-5] [com.nfdw.mapper.UserLeaveMapper.updateByPrimaryKeySelective] - ==> Parameters: acfc0e9232f54732a5d9ffe9071bf572(String), admin(String), 52531(String), 11(String), /leave/readOnlyLeave/625d3d86bd15439c96efb07a1931bfe8(String), 1(Integer), 3(Integer), 2019-02-19 00:00:00.0(Timestamp), 2019-02-19 00:00:00.0(Timestamp), 625d3d86bd15439c96efb07a1931bfe8(String)
+2019-02-19 16:38:48,575 DEBUG [http-nio-8081-exec-5] [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f98125d]
+2019-02-19 16:38:48,575 DEBUG [http-nio-8081-exec-5] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f98125d]
+2019-02-19 16:38:48,620 DEBUG [http-nio-8081-exec-5] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f98125d]
+2019-02-19 16:38:48,620 DEBUG [http-nio-8081-exec-5] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f98125d]
+2019-02-19 16:38:48,798 DEBUG [http-nio-8081-exec-9] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:38:48,798 DEBUG [http-nio-8081-exec-9] [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4569065a]
+2019-02-19 16:38:48,800 DEBUG [http-nio-8081-exec-9] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@f28f747] will be managed by Spring
+2019-02-19 16:38:48,800 DEBUG [http-nio-8081-exec-9] [com.nfdw.mapper.UserLeaveMapper.insertSelective] - ==>  Preparing: INSERT INTO user_leave ( id,user_id,user_name,process_instance_Id,reason,days,begin_time,end_time ) VALUES( ?,?,?,?,?,?,?,? ) 
+2019-02-19 16:38:48,800 DEBUG [http-nio-8081-exec-9] [com.nfdw.mapper.UserLeaveMapper.insertSelective] - ==> Parameters: f36184cf7d614b4bb650102c97588e6d(String), acfc0e9232f54732a5d9ffe9071bf572(String), admin(String), 2018(String), 11(String), 3(Integer), 2019-02-19 00:00:00.0(Timestamp), 2019-02-19 00:00:00.0(Timestamp)
+2019-02-19 16:38:48,800 DEBUG [http-nio-8081-exec-9] [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4569065a]
+2019-02-19 16:38:48,800 DEBUG [http-nio-8081-exec-9] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4569065a]
+2019-02-19 16:38:48,848 DEBUG [http-nio-8081-exec-9] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4569065a]
+2019-02-19 16:38:48,848 DEBUG [http-nio-8081-exec-9] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4569065a]
+2019-02-19 16:38:49,575 DEBUG [http-nio-8081-exec-7] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:38:49,575 DEBUG [http-nio-8081-exec-7] [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@472155a4]
+2019-02-19 16:38:49,580 DEBUG [http-nio-8081-exec-7] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@4df2f954] will be managed by Spring
+2019-02-19 16:38:49,580 DEBUG [http-nio-8081-exec-7] [com.nfdw.mapper.UserLeaveMapper.selectListByPage_COUNT] - ==>  Preparing: SELECT count(0) FROM user_leave WHERE user_id = ? 
+2019-02-19 16:38:49,580 DEBUG [http-nio-8081-exec-7] [com.nfdw.mapper.UserLeaveMapper.selectListByPage_COUNT] - ==> Parameters: acfc0e9232f54732a5d9ffe9071bf572(String)
+2019-02-19 16:38:49,624 DEBUG [http-nio-8081-exec-7] [com.nfdw.mapper.UserLeaveMapper.selectListByPage_COUNT] - <==      Total: 1
+2019-02-19 16:38:49,624 DEBUG [http-nio-8081-exec-7] [com.nfdw.mapper.UserLeaveMapper.selectListByPage] - ==>  Preparing: SELECT * from user_leave WHERE user_id=? LIMIT ? 
+2019-02-19 16:38:49,624 DEBUG [http-nio-8081-exec-7] [com.nfdw.mapper.UserLeaveMapper.selectListByPage] - ==> Parameters: acfc0e9232f54732a5d9ffe9071bf572(String), 10(Integer)
+2019-02-19 16:38:49,671 DEBUG [http-nio-8081-exec-7] [com.nfdw.mapper.UserLeaveMapper.selectListByPage] - <==      Total: 7
+2019-02-19 16:38:49,671 DEBUG [http-nio-8081-exec-7] [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@472155a4]
+2019-02-19 16:38:49,671 DEBUG [http-nio-8081-exec-7] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@472155a4]
+2019-02-19 16:38:49,671 DEBUG [http-nio-8081-exec-7] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@472155a4]
+2019-02-19 16:38:49,671 DEBUG [http-nio-8081-exec-7] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@472155a4]
+2019-02-19 16:38:49,861 DEBUG [http-nio-8081-exec-9] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:38:49,861 DEBUG [http-nio-8081-exec-9] [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@47212831]
+2019-02-19 16:38:49,861 DEBUG [http-nio-8081-exec-9] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@f28f747] will be managed by Spring
+2019-02-19 16:38:49,861 DEBUG [http-nio-8081-exec-9] [com.nfdw.mapper.UserLeaveMapper.selectByPrimaryKey] - ==>  Preparing: SELECT id,user_id,user_name,process_instance_Id,status,create_date,create_by,update_date,update_by,reason,task_name,urlpath,submittimes,days,begin_time,end_time FROM user_leave WHERE id = ? 
+2019-02-19 16:38:49,864 DEBUG [http-nio-8081-exec-9] [com.nfdw.mapper.UserLeaveMapper.selectByPrimaryKey] - ==> Parameters: f36184cf7d614b4bb650102c97588e6d(String)
+2019-02-19 16:38:49,909 DEBUG [http-nio-8081-exec-9] [com.nfdw.mapper.UserLeaveMapper.selectByPrimaryKey] - <==      Total: 1
+2019-02-19 16:38:49,911 DEBUG [http-nio-8081-exec-9] [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@47212831]
+2019-02-19 16:38:49,911 DEBUG [http-nio-8081-exec-9] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@47212831]
+2019-02-19 16:38:49,911 DEBUG [http-nio-8081-exec-9] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@47212831]
+2019-02-19 16:38:49,911 DEBUG [http-nio-8081-exec-9] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@47212831]
+2019-02-19 16:38:50,044 DEBUG [http-nio-8081-exec-9] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:38:50,044 DEBUG [http-nio-8081-exec-9] [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50042fba]
+2019-02-19 16:38:50,044 DEBUG [http-nio-8081-exec-9] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@f28f747] will be managed by Spring
+2019-02-19 16:38:50,044 DEBUG [http-nio-8081-exec-9] [com.nfdw.mapper.UserLeaveMapper.updateByPrimaryKeySelective] - ==>  Preparing: UPDATE user_leave SET id = id,user_id = ?,user_name = ?,process_instance_Id = ?,reason = ?,urlpath = ?,submittimes = ?,days = ?,begin_time = ?,end_time = ? WHERE id = ? 
+2019-02-19 16:38:50,044 DEBUG [http-nio-8081-exec-9] [com.nfdw.mapper.UserLeaveMapper.updateByPrimaryKeySelective] - ==> Parameters: acfc0e9232f54732a5d9ffe9071bf572(String), admin(String), 52541(String), 11(String), /leave/readOnlyLeave/f36184cf7d614b4bb650102c97588e6d(String), 1(Integer), 3(Integer), 2019-02-19 00:00:00.0(Timestamp), 2019-02-19 00:00:00.0(Timestamp), f36184cf7d614b4bb650102c97588e6d(String)
+2019-02-19 16:38:50,044 DEBUG [http-nio-8081-exec-9] [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50042fba]
+2019-02-19 16:38:50,044 DEBUG [http-nio-8081-exec-9] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50042fba]
+2019-02-19 16:38:50,089 DEBUG [http-nio-8081-exec-9] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50042fba]
+2019-02-19 16:38:50,089 DEBUG [http-nio-8081-exec-9] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50042fba]
+2019-02-19 16:38:50,264 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:38:50,264 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65ae95bf]
+2019-02-19 16:38:50,266 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@f28f747] will be managed by Spring
+2019-02-19 16:38:50,266 DEBUG [http-nio-8081-exec-8] [com.nfdw.mapper.UserLeaveMapper.insertSelective] - ==>  Preparing: INSERT INTO user_leave ( id,user_id,user_name,process_instance_Id,reason,days,begin_time,end_time ) VALUES( ?,?,?,?,?,?,?,? ) 
+2019-02-19 16:38:50,269 DEBUG [http-nio-8081-exec-8] [com.nfdw.mapper.UserLeaveMapper.insertSelective] - ==> Parameters: 08063d6bceec4217aa64f39e6437a8b8(String), acfc0e9232f54732a5d9ffe9071bf572(String), admin(String), 2018(String), 11(String), 3(Integer), 2019-02-19 00:00:00.0(Timestamp), 2019-02-19 00:00:00.0(Timestamp)
+2019-02-19 16:38:50,269 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65ae95bf]
+2019-02-19 16:38:50,269 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65ae95bf]
+2019-02-19 16:38:50,311 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65ae95bf]
+2019-02-19 16:38:50,311 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65ae95bf]
+2019-02-19 16:38:51,559 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:38:51,559 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e3e586d]
+2019-02-19 16:38:51,559 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@f28f747] will be managed by Spring
+2019-02-19 16:38:51,559 DEBUG [http-nio-8081-exec-8] [com.nfdw.mapper.UserLeaveMapper.selectByPrimaryKey] - ==>  Preparing: SELECT id,user_id,user_name,process_instance_Id,status,create_date,create_by,update_date,update_by,reason,task_name,urlpath,submittimes,days,begin_time,end_time FROM user_leave WHERE id = ? 
+2019-02-19 16:38:51,561 DEBUG [http-nio-8081-exec-8] [com.nfdw.mapper.UserLeaveMapper.selectByPrimaryKey] - ==> Parameters: 08063d6bceec4217aa64f39e6437a8b8(String)
+2019-02-19 16:38:51,606 DEBUG [http-nio-8081-exec-8] [com.nfdw.mapper.UserLeaveMapper.selectByPrimaryKey] - <==      Total: 1
+2019-02-19 16:38:51,606 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e3e586d]
+2019-02-19 16:38:51,606 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e3e586d]
+2019-02-19 16:38:51,606 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e3e586d]
+2019-02-19 16:38:51,606 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e3e586d]
+2019-02-19 16:38:51,739 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:38:51,739 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@659ac8a]
+2019-02-19 16:38:51,741 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@f28f747] will be managed by Spring
+2019-02-19 16:38:51,741 DEBUG [http-nio-8081-exec-8] [com.nfdw.mapper.UserLeaveMapper.updateByPrimaryKeySelective] - ==>  Preparing: UPDATE user_leave SET id = id,user_id = ?,user_name = ?,process_instance_Id = ?,reason = ?,urlpath = ?,submittimes = ?,days = ?,begin_time = ?,end_time = ? WHERE id = ? 
+2019-02-19 16:38:51,744 DEBUG [http-nio-8081-exec-8] [com.nfdw.mapper.UserLeaveMapper.updateByPrimaryKeySelective] - ==> Parameters: acfc0e9232f54732a5d9ffe9071bf572(String), admin(String), 52551(String), 11(String), /leave/readOnlyLeave/08063d6bceec4217aa64f39e6437a8b8(String), 1(Integer), 3(Integer), 2019-02-19 00:00:00.0(Timestamp), 2019-02-19 00:00:00.0(Timestamp), 08063d6bceec4217aa64f39e6437a8b8(String)
+2019-02-19 16:38:51,744 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@659ac8a]
+2019-02-19 16:38:51,744 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@659ac8a]
+2019-02-19 16:38:51,789 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@659ac8a]
+2019-02-19 16:38:51,789 DEBUG [http-nio-8081-exec-8] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@659ac8a]
+2019-02-19 16:38:51,966 DEBUG [http-nio-8081-exec-3] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:38:51,966 DEBUG [http-nio-8081-exec-3] [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e5efa30]
+2019-02-19 16:38:51,966 DEBUG [http-nio-8081-exec-3] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@f28f747] will be managed by Spring
+2019-02-19 16:38:51,966 DEBUG [http-nio-8081-exec-3] [com.nfdw.mapper.UserLeaveMapper.insertSelective] - ==>  Preparing: INSERT INTO user_leave ( id,user_id,user_name,process_instance_Id,reason,days,begin_time,end_time ) VALUES( ?,?,?,?,?,?,?,? ) 
+2019-02-19 16:38:51,969 DEBUG [http-nio-8081-exec-3] [com.nfdw.mapper.UserLeaveMapper.insertSelective] - ==> Parameters: fff98c0482d44e65a2fb214096dc4e8f(String), acfc0e9232f54732a5d9ffe9071bf572(String), admin(String), 2018(String), 11(String), 3(Integer), 2019-02-19 00:00:00.0(Timestamp), 2019-02-19 00:00:00.0(Timestamp)
+2019-02-19 16:38:51,969 DEBUG [http-nio-8081-exec-3] [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e5efa30]
+2019-02-19 16:38:51,969 DEBUG [http-nio-8081-exec-3] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e5efa30]
+2019-02-19 16:38:52,014 DEBUG [http-nio-8081-exec-3] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e5efa30]
+2019-02-19 16:38:52,014 DEBUG [http-nio-8081-exec-3] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e5efa30]
+2019-02-19 16:38:52,161 DEBUG [http-nio-8081-exec-4] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:38:52,161 DEBUG [http-nio-8081-exec-4] [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f0c4ea7]
+2019-02-19 16:38:52,169 DEBUG [http-nio-8081-exec-4] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@4df2f954] will be managed by Spring
+2019-02-19 16:38:52,169 DEBUG [http-nio-8081-exec-4] [com.nfdw.mapper.UserLeaveMapper.selectListByPage_COUNT] - ==>  Preparing: SELECT count(0) FROM user_leave WHERE user_id = ? 
+2019-02-19 16:38:52,169 DEBUG [http-nio-8081-exec-4] [com.nfdw.mapper.UserLeaveMapper.selectListByPage_COUNT] - ==> Parameters: acfc0e9232f54732a5d9ffe9071bf572(String)
+2019-02-19 16:38:52,211 DEBUG [http-nio-8081-exec-4] [com.nfdw.mapper.UserLeaveMapper.selectListByPage_COUNT] - <==      Total: 1
+2019-02-19 16:38:52,211 DEBUG [http-nio-8081-exec-4] [com.nfdw.mapper.UserLeaveMapper.selectListByPage] - ==>  Preparing: SELECT * from user_leave WHERE user_id=? LIMIT ? 
+2019-02-19 16:38:52,211 DEBUG [http-nio-8081-exec-4] [com.nfdw.mapper.UserLeaveMapper.selectListByPage] - ==> Parameters: acfc0e9232f54732a5d9ffe9071bf572(String), 10(Integer)
+2019-02-19 16:38:52,256 DEBUG [http-nio-8081-exec-4] [com.nfdw.mapper.UserLeaveMapper.selectListByPage] - <==      Total: 9
+2019-02-19 16:38:52,256 DEBUG [http-nio-8081-exec-4] [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f0c4ea7]
+2019-02-19 16:38:52,256 DEBUG [http-nio-8081-exec-4] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f0c4ea7]
+2019-02-19 16:38:52,256 DEBUG [http-nio-8081-exec-4] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f0c4ea7]
+2019-02-19 16:38:52,256 DEBUG [http-nio-8081-exec-4] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f0c4ea7]
+2019-02-19 16:38:53,064 DEBUG [http-nio-8081-exec-3] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:38:53,064 DEBUG [http-nio-8081-exec-3] [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4469427a]
+2019-02-19 16:38:53,064 DEBUG [http-nio-8081-exec-3] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@f28f747] will be managed by Spring
+2019-02-19 16:38:53,064 DEBUG [http-nio-8081-exec-3] [com.nfdw.mapper.UserLeaveMapper.selectByPrimaryKey] - ==>  Preparing: SELECT id,user_id,user_name,process_instance_Id,status,create_date,create_by,update_date,update_by,reason,task_name,urlpath,submittimes,days,begin_time,end_time FROM user_leave WHERE id = ? 
+2019-02-19 16:38:53,064 DEBUG [http-nio-8081-exec-3] [com.nfdw.mapper.UserLeaveMapper.selectByPrimaryKey] - ==> Parameters: fff98c0482d44e65a2fb214096dc4e8f(String)
+2019-02-19 16:38:53,110 DEBUG [http-nio-8081-exec-3] [com.nfdw.mapper.UserLeaveMapper.selectByPrimaryKey] - <==      Total: 1
+2019-02-19 16:38:53,110 DEBUG [http-nio-8081-exec-3] [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4469427a]
+2019-02-19 16:38:53,110 DEBUG [http-nio-8081-exec-3] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4469427a]
+2019-02-19 16:38:53,110 DEBUG [http-nio-8081-exec-3] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4469427a]
+2019-02-19 16:38:53,110 DEBUG [http-nio-8081-exec-3] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4469427a]
+2019-02-19 16:38:53,240 DEBUG [http-nio-8081-exec-3] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:38:53,240 DEBUG [http-nio-8081-exec-3] [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@52a3917f]
+2019-02-19 16:38:53,242 DEBUG [http-nio-8081-exec-3] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@f28f747] will be managed by Spring
+2019-02-19 16:38:53,242 DEBUG [http-nio-8081-exec-3] [com.nfdw.mapper.UserLeaveMapper.updateByPrimaryKeySelective] - ==>  Preparing: UPDATE user_leave SET id = id,user_id = ?,user_name = ?,process_instance_Id = ?,reason = ?,urlpath = ?,submittimes = ?,days = ?,begin_time = ?,end_time = ? WHERE id = ? 
+2019-02-19 16:38:53,245 DEBUG [http-nio-8081-exec-3] [com.nfdw.mapper.UserLeaveMapper.updateByPrimaryKeySelective] - ==> Parameters: acfc0e9232f54732a5d9ffe9071bf572(String), admin(String), 52561(String), 11(String), /leave/readOnlyLeave/fff98c0482d44e65a2fb214096dc4e8f(String), 1(Integer), 3(Integer), 2019-02-19 00:00:00.0(Timestamp), 2019-02-19 00:00:00.0(Timestamp), fff98c0482d44e65a2fb214096dc4e8f(String)
+2019-02-19 16:38:53,245 DEBUG [http-nio-8081-exec-3] [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@52a3917f]
+2019-02-19 16:38:53,250 DEBUG [http-nio-8081-exec-3] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@52a3917f]
+2019-02-19 16:38:53,540 DEBUG [http-nio-8081-exec-3] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@52a3917f]
+2019-02-19 16:38:53,540 DEBUG [http-nio-8081-exec-3] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@52a3917f]
+2019-02-19 16:38:58,015 DEBUG [http-nio-8081-exec-2] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:38:58,015 DEBUG [http-nio-8081-exec-2] [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@38cc6c50]
+2019-02-19 16:38:58,017 DEBUG [http-nio-8081-exec-2] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@4df2f954] will be managed by Spring
+2019-02-19 16:38:58,017 DEBUG [http-nio-8081-exec-2] [com.nfdw.mapper.UserLeaveMapper.selectListByPage_COUNT] - ==>  Preparing: SELECT count(0) FROM user_leave WHERE user_id = ? 
+2019-02-19 16:38:58,017 DEBUG [http-nio-8081-exec-2] [com.nfdw.mapper.UserLeaveMapper.selectListByPage_COUNT] - ==> Parameters: acfc0e9232f54732a5d9ffe9071bf572(String)
+2019-02-19 16:38:58,061 DEBUG [http-nio-8081-exec-2] [com.nfdw.mapper.UserLeaveMapper.selectListByPage_COUNT] - <==      Total: 1
+2019-02-19 16:38:58,063 DEBUG [http-nio-8081-exec-2] [com.nfdw.mapper.UserLeaveMapper.selectListByPage] - ==>  Preparing: SELECT * from user_leave WHERE user_id=? LIMIT ? 
+2019-02-19 16:38:58,063 DEBUG [http-nio-8081-exec-2] [com.nfdw.mapper.UserLeaveMapper.selectListByPage] - ==> Parameters: acfc0e9232f54732a5d9ffe9071bf572(String), 10(Integer)
+2019-02-19 16:38:58,111 DEBUG [http-nio-8081-exec-2] [com.nfdw.mapper.UserLeaveMapper.selectListByPage] - <==      Total: 9
+2019-02-19 16:38:58,111 DEBUG [http-nio-8081-exec-2] [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@38cc6c50]
+2019-02-19 16:38:58,111 DEBUG [http-nio-8081-exec-2] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@38cc6c50]
+2019-02-19 16:38:58,111 DEBUG [http-nio-8081-exec-2] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@38cc6c50]
+2019-02-19 16:38:58,111 DEBUG [http-nio-8081-exec-2] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@38cc6c50]
+2019-02-19 16:39:01,446 DEBUG [http-nio-8081-exec-1] [org.mybatis.spring.SqlSessionUtils] - Creating a new SqlSession
+2019-02-19 16:39:01,446 DEBUG [http-nio-8081-exec-1] [org.mybatis.spring.SqlSessionUtils] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a297d75]
+2019-02-19 16:39:01,448 DEBUG [http-nio-8081-exec-1] [org.mybatis.spring.transaction.SpringManagedTransaction] - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@4df2f954] will be managed by Spring
+2019-02-19 16:39:01,448 DEBUG [http-nio-8081-exec-1] [com.nfdw.mapper.UserLeaveMapper.selectListByPage_COUNT] - ==>  Preparing: SELECT count(0) FROM user_leave WHERE user_id = ? 
+2019-02-19 16:39:01,448 DEBUG [http-nio-8081-exec-1] [com.nfdw.mapper.UserLeaveMapper.selectListByPage_COUNT] - ==> Parameters: acfc0e9232f54732a5d9ffe9071bf572(String)
+2019-02-19 16:39:01,492 DEBUG [http-nio-8081-exec-1] [com.nfdw.mapper.UserLeaveMapper.selectListByPage_COUNT] - <==      Total: 1
+2019-02-19 16:39:01,494 DEBUG [http-nio-8081-exec-1] [com.nfdw.mapper.UserLeaveMapper.selectListByPage] - ==>  Preparing: SELECT * from user_leave WHERE user_id=? LIMIT ? 
+2019-02-19 16:39:01,494 DEBUG [http-nio-8081-exec-1] [com.nfdw.mapper.UserLeaveMapper.selectListByPage] - ==> Parameters: acfc0e9232f54732a5d9ffe9071bf572(String), 10(Integer)
+2019-02-19 16:39:01,539 DEBUG [http-nio-8081-exec-1] [com.nfdw.mapper.UserLeaveMapper.selectListByPage] - <==      Total: 9
+2019-02-19 16:39:01,539 DEBUG [http-nio-8081-exec-1] [org.mybatis.spring.SqlSessionUtils] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a297d75]
+2019-02-19 16:39:01,539 DEBUG [http-nio-8081-exec-1] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a297d75]
+2019-02-19 16:39:01,539 DEBUG [http-nio-8081-exec-1] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a297d75]
+2019-02-19 16:39:01,539 DEBUG [http-nio-8081-exec-1] [org.mybatis.spring.SqlSessionUtils] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a297d75]

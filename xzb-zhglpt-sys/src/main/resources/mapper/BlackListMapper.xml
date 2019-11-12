@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nfdw.mapper.BlackListMapper">
+    <resultMap id="BaseResultMap" type="com.nfdw.entity.SysUser">
+        <!--
+          WARNING - @mbg.generated
+        -->
+        <id column="id" jdbcType="VARCHAR" property="id"/>
+        <result column="username" jdbcType="VARCHAR" property="username"/>
+        <result column="password" jdbcType="VARCHAR" property="password"/>
+        <result column="age" jdbcType="INTEGER" property="age"/>
+        <result column="email" jdbcType="VARCHAR" property="email"/>
+        <result column="photo" jdbcType="VARCHAR" property="photo"/>
+        <result column="real_name" jdbcType="VARCHAR" property="realName"/>
+        <result column="create_by" jdbcType="VARCHAR" property="createBy"/>
+        <result column="update_by" jdbcType="VARCHAR" property="updateBy"/>
+        <result column="create_date" jdbcType="TIMESTAMP" property="createDate"/>
+        <result column="update_date" jdbcType="TIMESTAMP" property="updateDate"/>
+        <result column="del_flag" jdbcType="INTEGER" property="delFlag"/>
+        <result column="status" jdbcType="INTEGER" property="status"/>
+        <result column="department_id" jdbcType="INTEGER" property="departmentId"/>
+        <result column="position_id" jdbcType="INTEGER" property="positionId"/>
+        <result column="sort" jdbcType="INTEGER" property="sort"/>
+        <result column="locking_date" jdbcType="TIMESTAMP" property="lockingDate"/>
+    </resultMap>
+
+    <resultMap id="UserList" type="com.nfdw.entity.SysUser">
+        <id column="id" jdbcType="VARCHAR" property="id"/>
+        <result column="username" jdbcType="VARCHAR" property="username"/>
+        <result column="password" jdbcType="VARCHAR" property="password"/>
+        <result column="age" jdbcType="INTEGER" property="age"/>
+        <result column="email" jdbcType="VARCHAR" property="email"/>
+        <result column="photo" jdbcType="VARCHAR" property="photo"/>
+        <result column="real_name" jdbcType="VARCHAR" property="realName"/>
+        <result column="create_by" jdbcType="VARCHAR" property="createBy"/>
+        <result column="update_by" jdbcType="VARCHAR" property="updateBy"/>
+        <result column="create_date" jdbcType="TIMESTAMP" property="createDate"/>
+        <result column="update_date" jdbcType="TIMESTAMP" property="updateDate"/>
+        <result column="del_flag" jdbcType="INTEGER" property="delFlag"/>
+        <result column="status" jdbcType="INTEGER" property="status"/>
+        <result column="department_id" jdbcType="INTEGER" property="departmentId"/>
+        <result column="position_id" jdbcType="INTEGER" property="positionId"/>
+        <result column="sort" jdbcType="INTEGER" property="sort"/>
+        <result column="locking_date" jdbcType="TIMESTAMP" property="lockingDate"/>
+        <association column="department_id" jdbcType="INTEGER" property="departmentName" select="departmentName"
+                     javaType="STRING"/>
+        <association column="position_id" jdbcType="INTEGER" property="positionName" select="positionName"
+                     javaType="STRING"/>
+    </resultMap>
+
+    <select id="departmentName" resultType="STRING" parameterType="INTEGER">
+  select department_Name from sys_department where id=#{department_id}
+  </select>
+
+    <select id="positionName" resultType="STRING" parameterType="INTEGER">
+  select position_Name from sys_position where id=#{position_id}
+  </select>
+
+    <sql id="userColumn">
+        <trim suffix="" suffixOverrides=",">
+            <if test="id!=null">
+                id,
+            </if>
+            <if test="username!=null">
+                username,
+            </if>
+            <if test="password!=null">
+                password,
+            </if>
+            <if test="age!=null">
+                age,
+            </if>
+            <if test="email!=null">
+                email,
+            </if>
+            <if test="photo != null">
+                photo,
+            </if>
+            <if test="realName != null">
+                real_name,
+            </if>
+            <if test="createBy != null">
+                create_by,
+            </if>
+            <if test="updateBy != null">
+                update_by,
+            </if>
+            <if test="createDate != null">
+                create_date,
+            </if>
+            <if test="updateDate != null">
+                update_date,
+            </if>
+            <if test="delFlag != null">
+                del_flag,
+            </if>
+            <if test="status != null">
+                status,
+            </if>
+        </trim>
+    </sql>
+
+    <sql id="userValue">
+        <trim suffix="" suffixOverrides=",">
+            <if test="id!=null">
+                #{id},
+            </if>
+            <if test="username!=null">
+                #{username},
+            </if>
+            <if test="password!=null">
+                #{password},
+            </if>
+            <if test="age!=null">
+                #{age},
+            </if>
+            <if test="email!=null">
+                #{email},
+            </if>
+            <if test="photo != null">
+                #{photo,jdbcType=VARCHAR},
+            </if>
+            <if test="realName != null">
+                #{realName,jdbcType=VARCHAR},
+            </if>
+            <if test="createBy != null">
+                #{createBy,jdbcType=VARCHAR},
+            </if>
+            <if test="updateBy != null">
+                #{updateBy,jdbcType=VARCHAR},
+            </if>
+            <if test="createDate != null">
+                #{createDate,jdbcType=TIMESTAMP},
+            </if>
+            <if test="updateDate != null">
+                #{updateDate,jdbcType=TIMESTAMP},
+            </if>
+            <if test="delFlag != null">
+                #{delFlag,jdbcType=INTEGER},
+            </if>
+            <if test="status != null">
+                #{status,jdbcType=INTEGER},
+            </if>
+        </trim>
+    </sql>
+
+    <select id="selectListByPage" parameterType="com.nfdw.entity.SysUser" resultMap="UserList">
+        SELECT *
+        from sys_user
+        <where>
+            <if test="username!=null and username!=''">and username like '%${username}%'</if>
+            <if test="email!=null and email!=''">and email like '%${email}%'</if>
+            <if test="delFlag!=null">and del_flag =#{delFlag}</if>
+            and locking_date &gt; now()
+        </where>
+        order by update_date desc
+    </select>
+</mapper>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nfdw.mapper.AuthenticationMapper">
+
+    <select id="selectListByPage" resultType="com.nfdw.entity.Authentication">
+
+        select * from t_authentication
+        <where>
+            <if test="rightName !=null and rightName != ''">
+                and right_name = #{rightName}
+            </if>
+            <if test="rightCode != null and rightCode != ''">
+                and right_code = #{rightCode}
+            </if>
+            <if test="userNames != null and userNames != ''">
+                and user_names like '%${userNames}%'
+            </if>
+
+        </where>
+
+    </select>
+
+    <select id="queryInfoById" resultType="com.nfdw.entity.Authentication">
+    select * from t_authentication where id=#{id,javaType=String,jdbcType=VARCHAR};
+  </select>
+
+    <select id="getUserName" resultType="java.lang.String">
+
+        select real_name from sys_user where id = #{id}
+    </select>
+
+    <update id="insertUsernames">
+        update t_authentication set user_names = #{usernames} where id = #{id}
+    </update>
+</mapper>

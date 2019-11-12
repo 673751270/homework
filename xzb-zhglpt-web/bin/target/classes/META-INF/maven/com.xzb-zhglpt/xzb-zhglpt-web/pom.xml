@@ -1,0 +1,100 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <artifactId>xzb-zhglpt-basic</artifactId>
+    <groupId>com.xzb-zhglpt</groupId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>xzb-zhglpt-web</artifactId>
+  <name>xzb-zhglpt-web</name>
+  <url>http://maven.apache.org</url>
+  <packaging>jar</packaging>
+
+  <dependencies>
+
+    <!--生成代码插件-->
+    <dependency>
+      <groupId>org.mybatis.generator</groupId>
+      <artifactId>mybatis-generator-core</artifactId>
+      <version>1.3.5</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+
+
+    <dependency>
+      <groupId>com.xzb-zhglpt</groupId>
+      <artifactId>xzb-zhglpt-core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.xzb-zhglpt</groupId>
+      <artifactId>xzb-zhglpt-sys</artifactId>
+    </dependency>
+   <!--  <dependency>
+      <groupId>com.xzb-wb</groupId>
+      <artifactId>xzb-wb-activiti</artifactId>
+    </dependency> -->
+	
+	<dependency>
+      <groupId>com.xzb-zhglpt</groupId>
+      <artifactId>xzb-zhglpt-section</artifactId>
+    </dependency>
+	
+    <!-- <dependency>
+      <groupId>com.xzb-wb</groupId>
+      <artifactId>xzb-wb-blog</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency> -->
+    <!--   <dependency>
+          <groupId>com.xzb-wb</groupId>
+          <artifactId>xzb-wb-equipment</artifactId>
+          <version>1.0-SNAPSHOT</version>
+      </dependency> -->
+      
+    <!--   <dependency>
+          <groupId>com.xzb-wb</groupId>
+          <artifactId>xzb-wb-card</artifactId>
+          <version>1.0-SNAPSHOT</version>
+      </dependency>
+       -->
+      <dependency>
+          <groupId>com.xzb-zhglpt</groupId>
+          <artifactId>xzb-zhglpt-home</artifactId>
+          <version>1.0-SNAPSHOT</version>
+      </dependency> 
+      
+  </dependencies>
+  <build>
+    <finalName>xzb-zhglpt-web</finalName>
+
+	<plugins>
+		<plugin>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-maven-plugin</artifactId>
+			<configuration>
+				<fork>true</fork>
+				<mainClass>com.xzb-zhglpt.Application</mainClass>
+				<layout>ZIP</layout>
+			</configuration>
+			<executions>
+				<execution>
+					<goals>
+						<goal>repackage</goal>
+					</goals>
+				</execution>
+			</executions>
+		</plugin>
+		<!-- <plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-war-plugin</artifactId>
+			<version>2.6</version>
+		</plugin> -->
+
+	</plugins>
+  </build>
+</project>

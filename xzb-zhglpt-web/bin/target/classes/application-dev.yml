@@ -1,0 +1,132 @@
+server:
+  port: 8083
+  servlet:
+    context-path: /xzb-zhglpt-wb
+spring:
+  #开启热部署
+  devtools:
+    restart:
+      enabled: true
+      #additional-paths: src/ma #设置重启目录
+      additional-paths: src/main
+  datasource:
+    druid:
+      url: jdbc:mysql://192.168.31.143:3306/wb_zhglpt?useUnicode=true&characterEncoding=UTF-8
+      #url: jdbc:mysql://47.106.68.87:3306/wb_zhglpt?useUnicode=true&characterEncoding=UTF-8
+      username: root
+      password: 123456
+      # 使用druid数据源
+      type: com.alibaba.druid.pool.DruidDataSource
+      driver-class-name: com.mysql.jdbc.Driver
+      filters: stat,wall
+      maxActive: 20
+      initialSize: 1
+      maxWait: 60000
+      minIdle: 1
+      timeBetweenEvictionRunsMillis: 60000
+      minEvi2ctableIdleTimeMillis: 300000
+      validationQuery: select 'x'
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      poolPreparedStatements: true
+      maxOpenPreparedStatements: 20
+      web-stat-filter:
+        enabled: true
+        url-pattern: /*
+        exclusions: \*\.js, \*\.gif, \*\.jpg, \*\.png, \*\.css,  \*\.ico, /druid/\*
+        session-stat-enable: true
+        session-stat-max-count: 1000
+        principal-session-name: curentUser.username
+        profile-enable: true
+      stat-view-servlet:
+        enabled: true
+        url-pattern: /druid/*
+        reset-enable: false
+      aop-patterns: com.nfdw.service.impl.*
+
+  http:
+    encoding:
+      force: true
+  boot:
+    admin:
+      client:
+        prefer-ip: true
+      url: http://localhost:8082
+  freemarker:
+    allow-session-override: true
+
+mybatis:
+  type-aliases-package: com.nfdw.entity
+  mapper-locations: classpath*:mapper/*.xml
+  check-config-location: true
+  configuration:
+    cache-enabled: false
+    aggressive-lazy-loading: false
+    multiple-result-sets-enabled: true
+    map-underscore-to-camel-case: true #开启驼峰转换
+    use-generated-keys: true
+    default-executor-type: BATCH
+    default-statement-timeout: 600
+    log-impl: org.apache.ibatis.logging.log4j.Log4jImpl
+mapper:
+  mappers:
+    - com.nfdw.base.BaseMapper
+    - tk.mybatis.mapper.common.Mapper
+  not-empty: true
+  identity: mysql
+
+
+# PageHelperConfig 可以替代此方案
+pagehelper:
+  helperDialect: mysql
+  offsetAsPageNum: true
+  rowBoundsWithCount: true
+  pageSizeZero: true
+  reasonable: false
+  supportMethodsArguments: true
+  params: count=countSql
+
+lenosp:
+  uploadPath: ./file/
+  isDayType: false
+  filePath: ../file/
+  imagePath: ./image/
+
+logging:
+  file: ./logs/nfdw-log.log
+  level:
+    com.nfdw.mapper: debug
+
+dataType: mysql
+
+nfdw:
+  oa:
+    main: http://127.0.0.1:8081/oa/main
+    verification: http://127.0.0.1:8081/oa/api/verification/
+    loginOut: http://127.0.0.1:8081/oa/out/
+  card:
+    #卡采集
+    getCarInfo:
+      url: http://172.31.50.43:8080/guizhouPowercon/service/devicesUsed.do
+    # 卡开关机
+    startOrShutCard:
+      url: http://172.31.50.43:8080/guizhouPowercon/service/devicesEdit.do
+  terminal:
+    # 设备升级
+    deviceUpdate:
+      url: http://192.168.253.16:8080/updatedrivice
+    # 设备重启
+    deviceReboot:
+      url: http://192.168.253.16:8080/drivicereboot
+    # 设备采集
+    collect:
+      url: http://192.168.253.16:8080/autoselect
+    # 设备采集
+    infosetInterface:
+      url: http://192.168.253.16:8080/preset
+  equipment:
+    startUpDetection:
+      url: http://47.104.240.128:8080/scheduleTaskSys/deviceNetDetection
+
+      

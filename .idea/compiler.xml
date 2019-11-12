@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="nfdw-section" />
+        <module name="nfdw-home" />
+        <module name="xzb-zhglpt-home" />
+        <module name="xzb-wb-sys" />
+        <module name="xzb-zhglpt-section" />
+        <module name="xzb-wb-section" />
+        <module name="nfdw-activiti" />
+        <module name="xzb-wb-core" />
+        <module name="public-config" />
+        <module name="nfdw-sys" />
+        <module name="xzb-zhglpt-sys" />
+        <module name="nfdw-core" />
+        <module name="xzb-zhglpt-core" />
+        <module name="xzb-wb-home" />
+        <module name="nfdw-web" />
+        <module name="xzb-zhglpt-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="nfdw-activiti" target="1.8" />
+      <module name="nfdw-basic" target="1.8" />
+      <module name="nfdw-core" target="1.8" />
+      <module name="nfdw-home" target="1.8" />
+      <module name="nfdw-section" target="1.8" />
+      <module name="nfdw-sys" target="1.8" />
+      <module name="nfdw-web" target="1.8" />
+      <module name="public-config" target="1.8" />
+      <module name="xzb-wb-core" target="1.8" />
+      <module name="xzb-wb-home" target="1.8" />
+      <module name="xzb-wb-section" target="1.8" />
+      <module name="xzb-wb-sys" target="1.8" />
+      <module name="xzb-zhglpt-basic" target="1.8" />
+      <module name="xzb-zhglpt-core" target="1.8" />
+      <module name="xzb-zhglpt-home" target="1.8" />
+      <module name="xzb-zhglpt-section" target="1.8" />
+      <module name="xzb-zhglpt-sys" target="1.8" />
+      <module name="xzb-zhglpt-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="public-config" options="-parameters" />
+      <module name="xzb-zhglpt-core" options="-parameters" />
+      <module name="xzb-zhglpt-home" options="-parameters" />
+      <module name="xzb-zhglpt-section" options="-parameters" />
+      <module name="xzb-zhglpt-sys" options="-parameters" />
+      <module name="xzb-zhglpt-web" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nfdw.oa.mapper.OAMapper">
+
+    <resultMap id="ProcessesMap" type="com.nfdw.dto.ProcessResult">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="serial_number" jdbcType="VARCHAR" property="serialNumber"/>
+        <result column="fwzh" jdbcType="VARCHAR" property="fwzh"/>
+        <result column="process_type" jdbcType="VARCHAR" property="processType"/>
+        <result column="process_title" jdbcType="VARCHAR" property="processTitle"/>
+        <!--<result column="fqr" jdbcType="VARCHAR" property="fqr"/>-->
+        <result column="fqsj" jdbcType="TIMESTAMP" property="fqsj"/>
+        <result column="now_step" jdbcType="VARCHAR" property="nowStep"/>
+        <result column="assignName" jdbcType="VARCHAR" property="assignName"/>
+        <result column="process_state" jdbcType="VARCHAR" property="processState"/>
+        <result column="cb_State" jdbcType="VARCHAR" property="cbState"/>
+        <result column="type" jdbcType="INTEGER" property="type"/>
+    </resultMap>
+
+    <select id="getProcessResult" resultMap="ProcessesMap" resultType="STRING">
+		select serial_number,fwzh,process_type,
+        process_title,fqr,fqsj,now_step,now_assign,process_state,
+        cb_state,urgency,lwdw,fqbm,is_delete,process_id,fqr_name,assign_name,
+        task_id,next_id,next_name,id,process_type_id,upper_id,upper_name,ch_state,
+        case when now_assign=#{nowAssign} and ch_state=3
+        then 2 else 0 end as 'type'
+        from t_process_list where now_assign=#{nowAssign} and is_delete=1
+        union all
+        (select pl.serial_number,pl.fwzh,'传阅' as 'process_type',
+        pl.process_title,pl.fqr,pl.fqsj,pl.now_step,pl.now_assign,pl.process_state,
+        pl.cb_state,pl.urgency,pl.lwdw,pl.fqbm,pl.is_delete,pl.process_id,pl.fqr_name,pl.assign_name,
+        pl.task_id,pl.next_id,pl.next_name,pl.id,pl.process_type_id,pl.upper_id,pl.upper_name,pl.ch_state,
+        1 as 'type'
+        from t_process_list pl,t_process_view pv where pl.id= pv.list_id and pv.to_id=#{nowAssign} and pv.is_end =1) order by cb_state asc,urgency desc,fqsj desc
+        limit 10
+	</select>
+
+    <select id="processesCount" resultType="INT" parameterType="STRING">
+ select count(0) from
+ (select serial_number,fwzh,process_type,
+        process_title,fqr,fqsj,now_step,now_assign,process_state,
+        cb_state,urgency,lwdw,fqbm,is_delete,process_id,fqr_name,assign_name,
+        task_id,next_id,next_name,id,process_type_id,upper_id,upper_name,ch_state,
+        case when now_assign=#{nowAssign} and ch_state=3
+        then 2 else 0 end as 'type'
+        from t_process_list where now_assign=#{nowAssign} and is_delete=1
+        union all
+        (select pl.serial_number,pl.fwzh,'传阅' as 'process_type',
+        pl.process_title,pl.fqr,pl.fqsj,pl.now_step,pl.now_assign,pl.process_state,
+        pl.cb_state,pl.urgency,pl.lwdw,pl.fqbm,pl.is_delete,pl.process_id,pl.fqr_name,pl.assign_name,
+        pl.task_id,pl.next_id,pl.next_name,pl.id,pl.process_type_id,pl.upper_id,pl.upper_name,pl.ch_state,
+        1 as 'type'
+        from t_process_list pl,t_process_view pv where pl.id= pv.list_id and pv.to_id=#{nowAssign} and pv.is_end =1))
+ tmp_count
+    </select>
+</mapper>
+

@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: xzb-zhglpt-section
+Implementation-Version: 1.0-SNAPSHOT
+Built-By: 86385
+Implementation-Vendor-Id: com.xzb-zhglpt
+Build-Jdk: 1.8.0_131
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/xzb-zhglpt-basic/xzb-zhglpt-section
+Created-By: Maven Integration for Eclipse
+

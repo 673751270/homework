@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nfdw.mapper.HomeMapper">
+
+
+    <resultMap id="BaseResultMap" type="com.nfdw.dto.HomeResult">
+       
+        <association column="nowAssign" property="noticeInfos" select="noticeInfos"/>
+        
+    </resultMap>
+
+  
+
+    <resultMap id="InfoResultMap" type="com.nfdw.entity.InformationPublish">
+        <id column="id" jdbcType="VARCHAR" property="id"/>
+        <result column="publish_name" jdbcType="VARCHAR" property="publishName"/>
+        <result column="publish_department" jdbcType="VARCHAR" property="publishDepartment"/>
+        <result column="title" jdbcType="VARCHAR" property="title"/>
+        <result column="publish_time" jdbcType="TIMESTAMP" property="publishTime"/>
+        <association column="important_type" jdbcType="VARCHAR" property="importantType" select="importantType"/>
+    </resultMap>
+
+  
+    <select id="getHomeResult" resultMap="BaseResultMap" parameterType="STRING">
+	  select #{nowAssign} as nowAssign
+    </select>
+
+ <select id="importantType" resultType="STRING">
+    select dvalue from t_system_dictionary where dgroup = 'important_type' and code=#{scheduleType}
+    </select>
+    
+
+    <!-- 通知公告列表 -->
+    <select id="noticeInfos" resultMap="InfoResultMap">
+		select * from t_information_publish order by publish_time limit 5
+	</select>
+    
+
+
+</mapper>
+

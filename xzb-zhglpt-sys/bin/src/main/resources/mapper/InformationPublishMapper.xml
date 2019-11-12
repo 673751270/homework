@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nfdw.mapper.InformationPublishMapper">
+  <resultMap id="BaseResultMap" type="com.nfdw.entity.InformationPublish">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="publish_name" jdbcType="VARCHAR" property="publishName" />
+    <result column="publish_department" jdbcType="VARCHAR" property="publishDepartment" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="publish_time" jdbcType="TIMESTAMP" property="publishTime" />
+    <association column="information_type" jdbcType="VARCHAR" property="informationType" select="informationType"/>
+    <association column="important_type" jdbcType="VARCHAR" property="importantType" select="importantType"/>
+  </resultMap>
+
+  <resultMap id="InfoResultMap" type="com.nfdw.entity.InformationPublish">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="publish_name" jdbcType="VARCHAR" property="publishName" />
+    <result column="publish_department" jdbcType="VARCHAR" property="publishDepartment" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="publish_time" jdbcType="TIMESTAMP" property="publishTime" />
+    <result column="information_type" jdbcType="VARCHAR" property="informationType"/>
+    <result column="important_type" jdbcType="VARCHAR" property="importantType"/>
+    <association column="file_ids" jdbcType="LONGVARCHAR" property="files" select="fileList"/>
+  </resultMap>
+
+  <resultMap id="FileResultMap" type="com.nfdw.entity.File">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="file_name" jdbcType="VARCHAR" property="fileName"/>
+    <result column="file_path" jdbcType="VARCHAR" property="filePath"/>
+    <result column="file_size" jdbcType="VARCHAR" property="fileSize"/>
+    <result column="file_type" jdbcType="VARCHAR" property="fileType"/>
+  </resultMap>
+
+  <select id="fileList" resultMap="FileResultMap">
+  select * from t_file where find_in_set(id,#{file_ids,javaType=String,jdbcType=VARCHAR})
+  </select>
+
+  <select id="informationType" resultType="STRING">
+    select dvalue from t_system_dictionary where dgroup = 'information_type' and code=#{scheduleType}
+    </select>
+
+  <select id="importantType" resultType="STRING">
+    select dvalue from t_system_dictionary where dgroup = 'important_type' and code=#{scheduleType}
+    </select>
+
+  <select id="queryInfoById" resultMap="InfoResultMap">
+    select * from t_information_publish where id=#{id,javaType=String,jdbcType=VARCHAR};
+  </select>
+
+  <sql id="informationpublishColumn">
+    <trim suffix="" suffixOverrides=",">
+      <if test="id!=null">
+        id,
+      </if>
+      <if test="publish_name!=null">
+        publish_name,
+      </if>
+      <if test="publish_department!=null">
+        publish_department,
+      </if>
+      <if test="title!=null">
+        title,
+      </if>
+      <if test="information_type!=null">
+        information_type,
+      </if>
+      <if test="important_type!=null">
+        important_type,
+      </if>
+      <if test="file_path != null">
+        file_path,
+      </if>
+      <if test="file_name != null">
+        file_name,
+      </if>
+      <if test="publish_time != null">
+        publish_time,
+      </if>
+    </trim>
+  </sql>
+
+  <sql id="informationpublishValue">
+    <trim suffix="" suffixOverrides=",">
+      <if test="id!=null">
+        #{id},
+      </if>
+      <if test="publish_name!=null">
+        #{publish_name},
+      </if>
+      <if test="publish_department!=null">
+        #{publish_department},
+      </if>
+      <if test="title!=null">
+        #{title},
+      </if>
+      <if test="information_type!=null">
+        #{information_type},
+      </if>
+      <if test="important_type!=null">
+        #{important_type},
+      </if>
+      
+      <if test="file_path != null">
+        #{file_path},
+      </if>
+       <if test="file_name != null">
+        #{file_name},
+      </if>
+      <if test="publish_time != null">
+        #{publish_time,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </sql>
+  <select id="selectListByPage" parameterType="com.nfdw.entity.InformationPublish" resultMap="BaseResultMap">
+    SELECT *
+    from t_information_publish
+    <where>
+      <if test="title!=null and title!=''"> and title like '%${title}%'</if>
+      <if test="publishName!=null and publishName!=''"> and publish_Name like '%${publishName}%'</if>
+      <if test="publishDepartment!=null and publishDepartment!=''"> and publish_Department like '%${publishDepartment}%'</if>
+      <if test="informationType!=null and informationType!=''"> and information_Type like '%${informationType}%'</if>
+      <if test="publishTime!=null and publishTime!=''"> and publish_Time > #{publishTime}</if>
+    </where>
+    order by publish_time desc
+  </select>
+  <insert id="add" parameterType="com.nfdw.entity.InformationPublish" >
+    insert into t_information_publish(
+    <include refid="informationpublishColumn"/>
+    ) values (
+    <include refid="informationpublishValue"/>
+    )
+  </insert>
+
+  <delete id="delById" parameterType="java.lang.String">
+    delete from t_information_publish where id=#{id}
+  </delete>
+  <update id="update" parameterType="com.nfdw.entity.InformationPublish">
+    update t_information_publish set publish_name=#{publish_name,jdbcType=VARCHAR},publish_department=#{publish_department,jdbcType=VARCHAR},
+    title=#{title,jdbcType=VARCHAR},information_type=#{information_type,jdbcType=VARCHAR}, important_type=#{important_type,jdbcType=VARCHAR}, 
+    file_path=#{file_path,jdbcType=VARCHAR},file_name=#{file_name,jdbcType=VARCHAR}, publish_time=#{publish_time,jdbcType=TIMESTAMP}, 
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+</mapper>

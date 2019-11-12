@@ -1,0 +1,11 @@
+.top {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background-color: white;
+    top: 0;
+}
+
+.layui-tab-content {
+    padding: 0px;
+}

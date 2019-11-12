@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../nfdw-basic/nfdw-activiti/nfdw-activiti.iml" filepath="$PROJECT_DIR$/../nfdw-basic/nfdw-activiti/nfdw-activiti.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../nfdw-basic/nfdw-basic.iml" filepath="$PROJECT_DIR$/../nfdw-basic/nfdw-basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../nfdw-basic/nfdw-core/nfdw-core.iml" filepath="$PROJECT_DIR$/../nfdw-basic/nfdw-core/nfdw-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../nfdw-basic/nfdw-home/nfdw-home.iml" filepath="$PROJECT_DIR$/../nfdw-basic/nfdw-home/nfdw-home.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../nfdw-basic/nfdw-section/nfdw-section.iml" filepath="$PROJECT_DIR$/../nfdw-basic/nfdw-section/nfdw-section.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../nfdw-basic/nfdw-sys/nfdw-sys.iml" filepath="$PROJECT_DIR$/../nfdw-basic/nfdw-sys/nfdw-sys.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../nfdw-basic/nfdw-web/nfdw-web.iml" filepath="$PROJECT_DIR$/../nfdw-basic/nfdw-web/nfdw-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/public-config/public-config.iml" filepath="$PROJECT_DIR$/public-config/public-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xzb-zhglpt-core/xzb-wb-core.iml" filepath="$PROJECT_DIR$/xzb-zhglpt-core/xzb-wb-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xzb-wb-home/xzb-wb-home.iml" filepath="$PROJECT_DIR$/xzb-wb-home/xzb-wb-home.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xzb-wb-section/xzb-wb-section.iml" filepath="$PROJECT_DIR$/xzb-wb-section/xzb-wb-section.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xzb-wb-sys/xzb-wb-sys.iml" filepath="$PROJECT_DIR$/xzb-wb-sys/xzb-wb-sys.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xzb-zhglpt-basic.iml" filepath="$PROJECT_DIR$/xzb-zhglpt-basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xzb-zhglpt-core/xzb-zhglpt-core.iml" filepath="$PROJECT_DIR$/xzb-zhglpt-core/xzb-zhglpt-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xzb-zhglpt-home/xzb-zhglpt-home.iml" filepath="$PROJECT_DIR$/xzb-zhglpt-home/xzb-zhglpt-home.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xzb-zhglpt-section/xzb-zhglpt-section.iml" filepath="$PROJECT_DIR$/xzb-zhglpt-section/xzb-zhglpt-section.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xzb-zhglpt-sys/xzb-zhglpt-sys.iml" filepath="$PROJECT_DIR$/xzb-zhglpt-sys/xzb-zhglpt-sys.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xzb-zhglpt-web/xzb-zhglpt-web.iml" filepath="$PROJECT_DIR$/xzb-zhglpt-web/xzb-zhglpt-web.iml" />
+    </modules>
+  </component>
+</project>

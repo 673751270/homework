@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nfdw.section.mapper.DepartmentApplyMapper">
+    <resultMap id="BaseResultMap" type="com.nfdw.section.entity.DepartmentApply">
+        <!--
+          WARNING - @mbg.generated
+        -->
+        <id column="id" jdbcType="VARCHAR" property="id" />
+        <result column="department_name" jdbcType="VARCHAR" property="departmentName" />
+        <result column="creater" jdbcType="VARCHAR" property="creater" />
+        <result column="creater_time" jdbcType="TIMESTAMP" property="createrTime" />
+        <result column="gzarea" jdbcType="VARCHAR" property="gzarea" />
+    </resultMap>
+
+
+    <select id="selectListByPage" parameterType="com.nfdw.section.entity.DepartmentApply" resultMap="BaseResultMap">
+        SELECT id,orderno,ordername,region,applicant,currentlink,currenthandler,state FROM department_apply 
+        where
+        1=1
+        <if test="orderno !=null and orderno!='' ">
+         and orderno=#{orderno}
+        </if>
+        and status='1'
+    </select>
+    
+
+</mapper>

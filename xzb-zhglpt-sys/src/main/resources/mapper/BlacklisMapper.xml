@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nfdw.mapper.BlacklisMapper">
+
+    <select id="selectListByPage" resultType="com.nfdw.entity.Blacklist">
+
+        select * from t_black_user
+        <where>
+            <if test="username !=null and username != ''">
+                and username = #{username}
+            </if>
+            <if test="realName != null and realName != ''">
+                and real_name = #{realName}
+            </if>
+            <if test="ip != null and ip != ''">
+                and ip like #{ip}
+            </if>
+
+        </where>
+
+    </select>
+
+    <select id="queryInfoById" resultType="com.nfdw.entity.Blacklist">
+    select * from t_black_user where id=#{id,javaType=String,jdbcType=VARCHAR};
+  </select>
+</mapper>
